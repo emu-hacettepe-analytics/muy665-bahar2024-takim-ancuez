@@ -1,0 +1,39 @@
+install.packages("rmarkdown")
+
+---
+title: "Özgür Adıgüzel KAYA"
+---
+
+![](/assets/images/ozgur.jpeg){fig-align="center"}
+
+# Eğitim
+
+-   Lisans, Orta Doğu Teknik Üniversitesi Kimya Mühendisliği,Türkiye, 2017 - 2022.
+-   Yüksek Lisans, Mühendislik Yönetimi, Hacettepe Üniversitesi, Türkiye, 2024 - devam ediyor.
+
+# İş Deneyimi
+
+## İşler
+
+1.  Kazan Soda Elektrik, Proses Mühendisi , 2022-devam ediyor
+
+## Stajlar
+
+1.  Tüpraş, Üretim Stajyeri, 08.21-09.21
+
+2.  Kazan Soda Elektrik, Üretim Stajyeri, 02.22-03.22
+
+# Projeler
+
+# Yayınlar
+
+# Yetkinlikler
+
+Aspen PLUS, MS Office, SAP
+
+# Hobiler
+
+Futbol, Hentbol, Bilgisayar oyunları
+```{r}
+
+```

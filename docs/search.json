@@ -564,5 +564,26 @@
     "title": "Kerem Asaf Tecirlioğlu",
     "section": "Stajlar",
     "text": "Stajlar\n\nSilverline, Otomasyon ve Üretim Mühendisi , 2018\nODTÜ Robot Topluluğu, Yönetim Kurulu Üyesi , 2015-2017"
+  },
+  {
+    "objectID": "takim/ozgur.html#işler",
+    "href": "takim/ozgur.html#işler",
+    "title": "Özgür Adıgüzel KAYA",
+    "section": "İşler",
+    "text": "İşler\n\nKazan Soda Elektrik, Proses Mühendisi , 2022-devam ediyor"
+  },
+  {
+    "objectID": "takim/ozgur.html#stajlar",
+    "href": "takim/ozgur.html#stajlar",
+    "title": "Özgür Adıgüzel KAYA",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nTüpraş, Üretim Stajyeri, 08.21-09.21\nKazan Soda Elektrik, Üretim Stajyeri, 02.22-03.22"
+  },
+  {
+    "objectID": "takim/ozgur.html",
+    "href": "takim/ozgur.html",
+    "title": "Özgür Adıgüzel KAYA",
+    "section": "",
+    "text": "install.packages(“rmarkdown”)"
   }
 ]
