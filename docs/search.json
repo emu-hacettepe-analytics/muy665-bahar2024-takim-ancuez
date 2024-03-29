@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: XXX",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+    "text": "Takım Üyeleri\n\nKerem Asaf Tecirlioğlu\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
   },
   {
     "objectID": "portfolyo.html",
@@ -240,7 +240,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nKerem Asaf Tecirlioğlu\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Takım Üyeleri"
     ]
@@ -550,5 +550,19 @@
       "Takım Üyeleri",
       "Dusan Tadic"
     ]
+  },
+  {
+    "objectID": "takim/kerem.html#işler",
+    "href": "takim/kerem.html#işler",
+    "title": "Kerem Asaf Tecirlioğlu",
+    "section": "İşler",
+    "text": "İşler\n\nAIS Field, Yazılım Mühendisi, 2023-2024\nSerbest Meslek, 2022-2023\nGeodo Technology, Co-Founder, 2017-2022\nAraştırmacı Çocuk Merkezi, Eğitmen, 2016-2018"
+  },
+  {
+    "objectID": "takim/kerem.html#stajlar",
+    "href": "takim/kerem.html#stajlar",
+    "title": "Kerem Asaf Tecirlioğlu",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nSilverline, Otomasyon ve Üretim Mühendisi , 2018\nODTÜ Robot Topluluğu, Yönetim Kurulu Üyesi , 2015-2017"
   }
 ]
