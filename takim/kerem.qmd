@@ -1,0 +1,46 @@
+---
+--- title: "Kerem Asaf Tecirlioğlu" ---
+---
+
+![](/assets/images/DSC_3381.jpg){fig-align="center" width="225"}
+
+# Eğitim
+
+-   Lisans, Makine Mühendisliği, Orta Doğu Teknik Üniversitesi, Türkiye, 2015 - 2021
+-   Yandal, Mekatronik Mühendisliği, Orta Doğu Teknik Üniversitesi, Türkiye, 2017-2022
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2024 - devam ediyor.
+
+# İş Deneyimi
+
+## İşler
+
+1.  AIS Field, Yazılım Mühendisi, 2023-2024
+
+2.  Serbest Meslek, 2022-2023
+
+3.  Geodo Technology, Co-Founder, 2017-2022
+
+4.  Araştırmacı Çocuk Merkezi, Eğitmen, 2016-2018
+
+## Stajlar
+
+1.  Silverline, Otomasyon ve Üretim Mühendisi , 2018
+
+2.  ODTÜ Robot Topluluğu, Yönetim Kurulu Üyesi , 2015-2017
+
+# Projeler
+
+1.  TÜBİTAK 1512 , 2018
+2.  EPDK Ar-Ge Desteği
+
+# Yayınlar
+
+1.  yok
+
+# Yetkinlikler
+
+Robotics, Algorithms, Mechatronics, Advanced Mathematics, Navigation Systems, Kalman Filtering, System Models, Feedback Systems, C/C++,Python, ROS, Linux, CATIA V5, Eagle, SolidWorks
+
+# Hobiler
+
+Müzik, Spor, Video, Fotoğraf, Mühendislik
