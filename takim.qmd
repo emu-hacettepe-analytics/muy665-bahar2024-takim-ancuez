@@ -8,8 +8,7 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 1.  [Kerem Asaf Tecirlioğlu](/takim/kerem.qmd)
 
-2.  [Dušan Tadić](/takim/dusantadic.qmd)
+2.  [Özgür Adıgüzel KAYA](/takim/ozgur.qmd)
 
-3.  [Frederico Rodrigues de Paula Santos](/takim/fred.qmd)
+3.
 
-4.  [Sebastian Szymański](/takim/szymanski.qmd)
