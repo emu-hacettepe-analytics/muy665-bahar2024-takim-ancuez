@@ -29,4 +29,32 @@ custom_summary <- function(vector){
 apply(mtcars, 2, custom_summary)
 ```
 
-## (c) 
+## (c) Vektör verilerini aramak ve kullanmak
+
+```{r}
+library("dslabs")
+
+buf = na_example
+
+print(buf)
+
+
+counter = 0
+
+for (param in 1:length(buf)) {
+	if(is.na(buf[param])){
+		buf [param] = 665
+		counter = counter + 1
+
+	}
+	
+}
+
+
+{
+	format = sprintf("Number of NA variables in na_example vector is %d", counter)
+	print(format)
+	print(buf)
+}
+
+```

@@ -4,7 +4,7 @@ install.packages("rmarkdown")
 title: "Özgür Adıgüzel KAYA"
 ---
 
-![](/assets/images/ozgur.jpeg){fig-align="center"}
+![](/assets/images/ozgur.jpg){fig-align="center" width="173"}
 
 # Eğitim
 
@@ -34,6 +34,7 @@ Aspen PLUS, MS Office, SAP
 # Hobiler
 
 Futbol, Hentbol, Bilgisayar oyunları
+
 ```{r}
 
 ```
