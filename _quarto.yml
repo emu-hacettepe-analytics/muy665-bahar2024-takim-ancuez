@@ -36,10 +36,9 @@ website:
       search: true
       contents:
         - takim.qmd
-        - takim/dusantadic.qmd
-        - takim/edindzeko.qmd
-        - takim/fred.qmd  
-        - takim/szymanski.qmd  
+        - takim/kerem.qmd
+        - takim/ozgur.qmd
+        - takim/bbaharkurt.qmd
         
         
   page-navigation: true
