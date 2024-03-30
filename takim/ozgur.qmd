@@ -1,10 +1,9 @@
 
-
 ---
 title: "Özgür Adıgüzel KAYA"
 ---
 
-![](/assets/images/ozgur.jpg){fig-align="center" width="173"}
+![](/assets/images/ozgurr.jpg){fig-align="center" width="173"}
 
 # Eğitim
 
