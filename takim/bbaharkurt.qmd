@@ -7,38 +7,40 @@ title: "Büşra Bahar Kurt"
 # Eğitim
 
 -   Lisans, Bilgisayar Mühendisliği, Ondokuz Mayıs Üniversitesi, Türkiye, 2012 - 2016.
--   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
+-   Yüksek Lisans, Mühendislik Yönetimi, Hacettepe Üniversitesi, Türkiye, 2023 - Halen
 
 # İş Deneyimi
 
 ## İşler
 
-1.  Huawei Telekomünikasyon A.Ş. , Yazılım Test Mühendislik Yöneticisi, 2021 - devam ediyor.
+-   Huawei Telekomünikasyon A.Ş. , Yazılım Test Mühendislik Yöneticisi, 2021 - Halen
 
-2. İnnova Bilişim Çözümleri A.Ş. , Yazılım Test Mühendisi, 2020 - 2021
+-   İnnova Bilişim Çözümleri A.Ş. , Yazılım Test Mühendisi, 2020 - 2021
 
-3. SmartICT Bilişim A.Ş. , Yazılım Test Mühendisi, 2018 - 2020
+-   SmartICT Bilişim A.Ş. , Yazılım Test Mühendisi, 2018 - 2020
 
 ## Stajlar
 
-1.  Yapı Kredi Teknoloji, Stajyer Mühendis - Uygulama Altyapısı Tasarım ve Planlama, 2016 
+-   Yapı Kredi Teknoloji, Stajyer Mühendis - Uygulama Altyapısı Tasarım ve Planlama, 2016
 
-2.  Yapı Kredi Teknoloji, Stajyer Mühendis - Altyapı Yönetim Araçları, 2015
+-   Yapı Kredi Teknoloji, Stajyer Mühendis - Altyapı Yönetim Araçları, 2015
 
-2.  Yapı Kredi Teknoloji, Stajyer Mühendis - Uygulama Mimarisi ve Kalite Güvencesi, 2014
+-   Yapı Kredi Teknoloji, Stajyer Mühendis - Uygulama Mimarisi ve Kalite Güvencesi, 2014
 
 # Projeler
 
--
+-   
 
 # Yayınlar
 
--
+-   
 
 # Yetkinlikler
 
 Java, Postman, SoapUI, Swagger, Jira, Confluence, MySQL, TOAD, SDLC, STLC, Agile, BDD, TDD, Git
 
+Sertifikalar: Scrum Master - [SCRUMstudy - Accreditation Body for Scrum and Agile](https://www.linkedin.com/company/scrumstudy?trk=public_profile_profile-section-card_subtitle-click)
+
 # Hobiler
 
--
+-   
