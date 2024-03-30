@@ -1,0 +1,44 @@
+---
+title: "Busra Bahar Kurt"
+---
+
+![](/assets/images/bbaharkurt.jpeg){fig-align="center"}
+
+# Eğitim
+
+-   Lisans, Bilgisayar Mühendisliği, Ondokuz Mayıs Üniversitesi, Türkiye, 2012 - 2016.
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
+
+# İş Deneyimi
+
+## İşler
+
+1.  Huawei Telekomunikasyon A.Ş. , Yazılım Test Mühendislik Yöneticisi, 2021 - devam ediyor.
+
+2. İnnova Bilişim Çözümleri A.Ş. , Yazılım Test Mühendisi, 2020 - 2021
+
+3. SmartICT Bilişim A.Ş. , Yazılım Test Mühendisi, 2018 - 2020
+
+## Stajlar
+
+1.  Yapı Kredi Teknoloji, Stajyer Mühendis - Uygulama Altyapısı Tasarım ve Planlama, 2016 
+
+2.  Yapı Kredi Teknoloji, Stajyer Mühendis - Altyapı Yönetim Araçları, 2015
+
+2.  Yapı Kredi Teknoloji, Stajyer Mühendis - Uygulama Mimarisi ve Kalite Güvencesi, 2014
+
+# Projeler
+
+-
+
+# Yayınlar
+
+-
+
+# Yetkinlikler
+
+Java, Postman, SoapUI, Swagger, Jira, Confluence, MySQL, TOAD, SDLC, STLC, Agile, BDD, TDD, Git
+
+# Hobiler
+
+-
