@@ -4,10 +4,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Takım Üyeleri"
-    ]
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\nBüşra Bahar KURT\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "takim/ozgur.html",
@@ -35,22 +32,14 @@
     "href": "takim/dusantadic.html#işler",
     "title": "Dusan Tadic",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Dusan Tadic"
-    ]
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "takim/dusantadic.html#stajlar",
     "href": "takim/dusantadic.html#stajlar",
     "title": "Dusan Tadic",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Dusan Tadic"
-    ]
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
   },
   {
     "objectID": "portfolyo.html",
@@ -119,7 +108,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Ançüez",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA"
+    "text": "Takım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\nBüşra Bahar KURT"
   },
   {
     "objectID": "index.html#proje-adı",
@@ -280,5 +269,19 @@
       "Takım Üyeleri",
       "Sebastian Szymański"
     ]
+  },
+  {
+    "objectID": "docs/takim/bbaharkurt.html#işler",
+    "href": "docs/takim/bbaharkurt.html#işler",
+    "title": "Busra Bahar Kurt",
+    "section": "İşler",
+    "text": "İşler\n\nHuawei Telekomunikasyon A.Ş. , Yazılım Test Mühendislik Yöneticisi, 2021 - devam ediyor.\nİnnova Bilişim Çözümleri A.Ş. , Yazılım Test Mühendisi, 2020 - 2021\nSmartICT Bilişim A.Ş. , Yazılım Test Mühendisi, 2018 - 2020"
+  },
+  {
+    "objectID": "docs/takim/bbaharkurt.html#stajlar",
+    "href": "docs/takim/bbaharkurt.html#stajlar",
+    "title": "Busra Bahar Kurt",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nYapı Kredi Teknoloji, Stajyer Mühendis - Uygulama Altyapısı Tasarım ve Planlama, 2016\nYapı Kredi Teknoloji, Stajyer Mühendis - Altyapı Yönetim Araçları, 2015\nYapı Kredi Teknoloji, Stajyer Mühendis - Uygulama Mimarisi ve Kalite Güvencesi, 2014"
   }
 ]
