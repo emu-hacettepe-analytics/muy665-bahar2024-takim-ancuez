@@ -1,5 +1,5 @@
 ---
-title: "Busra Bahar Kurt"
+title: "Büşra Bahar Kurt"
 ---
 
 ![](/assets/images/bbaharkurt.jpeg){fig-align="center"}
@@ -13,7 +13,7 @@ title: "Busra Bahar Kurt"
 
 ## İşler
 
-1.  Huawei Telekomunikasyon A.Ş. , Yazılım Test Mühendislik Yöneticisi, 2021 - devam ediyor.
+1.  Huawei Telekomünikasyon A.Ş. , Yazılım Test Mühendislik Yöneticisi, 2021 - devam ediyor.
 
 2. İnnova Bilişim Çözümleri A.Ş. , Yazılım Test Mühendisi, 2020 - 2021
 
