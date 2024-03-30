@@ -8,10 +8,7 @@ Bu çalışmada 3 görevimiz var. Bu görevler,
 
 -   Videonun 30-60. dakikası özeti:
 
-------------------------------------------------------------------------
 
-> \<div class='text-justify'\>
->
 > Geleneksel öğrenme ve derin öğrenme süreçleri karşılaştırıldığında geleneksel öğrenmede öznitelik çıkarımları yapılırken ciddi çalışmalar yapılıp, veriler toplanıp işlenirken, derin öğrenme sürecinde öznitelik çıkarımı ve öğrenme kısmı kendi içinde dahil olduğu için geleneksel öğrenmede bu tarafta daha fazla efor harcanıyor. Kıyaslamaya bakıldığında yapısal olmayan verilerde derin öğrenme daha iyi çalışmakta. Ancak yorumlanabilirliği daha düşük. Aynı zamanda robust açısından değerlendirildiğinde kullanılan tahmin yöntemi sonucunda bir tahminin yanlış olması durumunda sistemin etkilenme oranı derin öğrenmede daha fazla.
 >
 > Tahmin yöntemlerinin kullanılmasının en önemli sebebi karar vermede bu yöntemlerin etkili olması. Tahmin doğruluğunun önemi çeşitli örnekler verilerek anlatılmakta. Elektrik piyasasındaki örnekte olduğu gibi saatlik elektrik üretim ve tüketim miktarlarındaki yanlış tahminler yıllık bakıldığında şirketler için ciddi miktarda maddi kayıplara sebep olmakta. Çeşitli özelleşmiş öznitelik çıkarımları ve makine öğrenimi kullanarak oluşturulan modeller ile bu kayıplar da aynı zamanda ciddi oranda azaltılabilir. Bu modeller oluşturulurken doğru verilen toplanması ve özel durumlarda bu verilerin sürekli olmayabileceğinin de göz önünde bulundurulması gerekiyor.
@@ -26,9 +23,7 @@ Bu çalışmada 3 görevimiz var. Bu görevler,
 >
 > Computer vision alanında çalışmak isteyen öğrenciler, görüntü işleme ve derin öğrenme teknikleri üzerine odaklanabileceği söylenmiştir. PyTorch gibi derin öğrenme kütüphanelerini kullanarak yapay sinir ağı modelleri oluşturmak ve eğitmek, öğrencilere derin öğrenme konusunda pratik deneyim kazandırabileceği konuşulmuştur.
 >
-> \</div\>
 
-------------------------------------------------------------------------
 
 ## (b) Özel fonksiyonlar ve döngüler ile istatistiksel özetleri keşfetmek
 
