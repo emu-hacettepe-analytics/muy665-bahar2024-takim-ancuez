@@ -1,4 +1,4 @@
-install.packages("rmarkdown")
+
 
 ---
 title: "Özgür Adıgüzel KAYA"
@@ -15,7 +15,7 @@ title: "Özgür Adıgüzel KAYA"
 
 ## İşler
 
-1.  Kazan Soda Elektrik, Proses Mühendisi , 2022-devam ediyor
+1.  Kazan Soda Elektrik, Proses Mühendisi , 09.22-devam ediyor
 
 ## Stajlar
 
