@@ -2,15 +2,31 @@
 title: "Çalışma 1"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+Bu çalışmada 3 görevimiz var. Bu görevler,
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+## (a) Sağlanan kaynaklar videolardan özet sağlamak
 
-## (a)
+## (b) Özel fonksiyonlar ve döngüler ile istatistiksel özetleri keşfetmek
 
 ```{r}
-1 + 1
+custom_summary <- function(vector){
+    mean <- mean(vector)
+    median <- median(vector)
+    min <- min(vector)
+    max <- max(vector)
+    sd <- sd(vector)
+    return(c(mean, median, min, max, sd))
+}
+
+
+{
+  print("Mean, Median, Min, Max, SD")
+  for (param in 1:length(mtcars)) {
+      print(custom_summary(mtcars[,param]))
+  }
+}
+
+apply(mtcars, 2, custom_summary)
 ```
 
-## (b)
+## (c) 

@@ -1,228 +1,56 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Takım: XXX",
-    "section": "",
-    "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nBu analitik çalışmalarımızı paylaşıyoruz.\nLütfen faaliyetlerimizi görmek için için bizi takipte kalın."
-  },
-  {
-    "objectID": "teammembers/volkansonmez.html",
-    "href": "teammembers/volkansonmez.html",
-    "title": "Assignment 2",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team.html",
-    "href": "team.html",
+    "objectID": "takim.html",
+    "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Use left menu to see the detailed CVs of our Team Members.\n\nTeam Members\n\nEdin_Džeko\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\n\n\n\n\n\n\n Back to top",
     "crumbs": [
-      "Team Members",
       "Takım Üyeleri"
     ]
   },
   {
-    "objectID": "assignments/assignment-2.html",
-    "href": "assignments/assignment-2.html",
-    "title": "Assignment 2",
+    "objectID": "takim/ozgur.html",
+    "href": "takim/ozgur.html",
+    "title": "Özgür Adıgüzel KAYA",
     "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Assignment 2"
-    ]
+    "text": "install.packages(“rmarkdown”)"
   },
   {
-    "objectID": "analysis.html",
-    "href": "analysis.html",
-    "title": "Analysis",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
+    "objectID": "takim/ozgur.html#işler",
+    "href": "takim/ozgur.html#işler",
+    "title": "Özgür Adıgüzel KAYA",
+    "section": "İşler",
+    "text": "İşler\n\nKazan Soda Elektrik, Proses Mühendisi , 2022-devam ediyor"
   },
   {
-    "objectID": "assignments/assignment-1.html",
-    "href": "assignments/assignment-1.html",
-    "title": "Assignment 1",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts.",
-    "crumbs": [
-      "Assignment 1"
-    ]
+    "objectID": "takim/ozgur.html#stajlar",
+    "href": "takim/ozgur.html#stajlar",
+    "title": "Özgür Adıgüzel KAYA",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nTüpraş, Üretim Stajyeri, 08.21-09.21\nKazan Soda Elektrik, Üretim Stajyeri, 02.22-03.22"
   },
   {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data",
-    "section": "",
-    "text": "Data source: xxx\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "teammembers/erdidasdemir.html",
-    "href": "teammembers/erdidasdemir.html",
-    "title": "Assignment 1",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
-  },
-  {
-    "objectID": "team/volkansonmez.html",
-    "href": "team/volkansonmez.html",
-    "title": "Assignment 2",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Project Team",
-      "Assignment 2"
-    ]
-  },
-  {
-    "objectID": "team/erdidasdemir.html",
-    "href": "team/erdidasdemir.html",
-    "title": "Erdi Dasdemir",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts.",
-    "crumbs": [
-      "Team Members",
-      "Erdi Dasdemir"
-    ]
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "My Assignments",
-    "section": "",
-    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Spring 2024] EMU660 Decision Making with Analytics course.\nPlease use left menu to navigate through my assignments.\n\n\n\n Back to top",
-    "crumbs": [
-      "Assignments",
-      "My Assignments"
-    ]
-  },
-  {
-    "objectID": "project.html",
-    "href": "project.html",
-    "title": "Project X",
-    "section": "",
-    "text": "Welcome to my project page.\nKeep an eye on this space to stay updated with my project activities.\n(The titles below are provided as examples; please feel free to adjust them as necessary.)"
-  },
-  {
-    "objectID": "project.html#data-source",
-    "href": "project.html#data-source",
-    "title": "Project X",
-    "section": "2.1 Data Source",
-    "text": "2.1 Data Source\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#general-information-about-data",
-    "href": "project.html#general-information-about-data",
-    "title": "Project X",
-    "section": "2.2 General Information About Data",
-    "text": "2.2 General Information About Data\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#reason-of-choice",
-    "href": "project.html#reason-of-choice",
-    "title": "Project X",
-    "section": "2.3 Reason of Choice",
-    "text": "2.3 Reason of Choice\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#preprocessing",
-    "href": "project.html#preprocessing",
-    "title": "Project X",
-    "section": "2.4 Preprocessing",
-    "text": "2.4 Preprocessing\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#exploratory-data-analysis",
-    "href": "project.html#exploratory-data-analysis",
-    "title": "Project X",
-    "section": "3.1 Exploratory Data Analysis",
-    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#trend-analysis",
-    "href": "project.html#trend-analysis",
-    "title": "Project X",
-    "section": "3.2 Trend Analysis",
-    "text": "3.2 Trend Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#model-fitting",
-    "href": "project.html#model-fitting",
-    "title": "Project X",
-    "section": "3.3 Model Fitting",
-    "text": "3.3 Model Fitting\nxxxxxx"
-  },
-  {
-    "objectID": "project.html#results",
-    "href": "project.html#results",
-    "title": "Project X",
-    "section": "3.4 Results",
-    "text": "3.4 Results\nxxxxxx"
-  },
-  {
-    "objectID": "team/szymanski.html",
-    "href": "team/szymanski.html",
-    "title": "Sebastian Szymański",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/edindzeko.html",
-    "href": "team/edindzeko.html",
-    "title": "Edin_Džeko",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts."
-  },
-  {
-    "objectID": "team/dusantadic.html",
-    "href": "team/dusantadic.html",
+    "objectID": "takim/dusantadic.html#işler",
+    "href": "takim/dusantadic.html#işler",
     "title": "Dusan Tadic",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
+    "section": "İşler",
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Dusan Tadic"
+    ]
   },
   {
-    "objectID": "team/fred.html",
-    "href": "team/fred.html",
-    "title": "Frederico Rodrigues",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html#proje-adı",
-    "href": "index.html#proje-adı",
-    "title": "Takım: XXX",
-    "section": "Proje Adı",
-    "text": "Proje Adı\nMUY660-İş Analitiği iyileştirme çalışmaları (örnek)"
-  },
-  {
-    "objectID": "index.html#proje-konusu",
-    "href": "index.html#proje-konusu",
-    "title": "Takım: XXX",
-    "section": "Proje Konusu",
-    "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
-  },
-  {
-    "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
-    "href": "index.html#veri-seti-hakkında-özet-bilgi",
-    "title": "Takım: XXX",
-    "section": "Veri Seti Hakkında Özet Bilgi",
-    "text": "Veri Seti Hakkında Özet Bilgi"
-  },
-  {
-    "objectID": "index.html#sonuçlar",
-    "href": "index.html#sonuçlar",
-    "title": "Takım: XXX",
-    "section": "Sonuçlar",
-    "text": "Sonuçlar\nBurada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır."
-  },
-  {
-    "objectID": "index.html#takım-üyeleri",
-    "href": "index.html#takım-üyeleri",
-    "title": "Takım: XXX",
-    "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nKerem Asaf Tecirlioğlu\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański"
+    "objectID": "takim/dusantadic.html#stajlar",
+    "href": "takim/dusantadic.html#stajlar",
+    "title": "Dusan Tadic",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Dusan Tadic"
+    ]
   },
   {
     "objectID": "portfolyo.html",
@@ -236,74 +64,90 @@
     ]
   },
   {
-    "objectID": "takim.html",
-    "href": "takim.html",
-    "title": "Takım Üyeleri",
+    "objectID": "portfolyo/calisma1.html",
+    "href": "portfolyo/calisma1.html",
+    "title": "Çalışma 1",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\n\n\n\n\n\n\n Back to top"
+    "text": "Bu çalışmada 3 görevimiz var. Bu görevler,",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
   },
   {
-    "objectID": "proje.html",
-    "href": "proje.html",
-    "title": "Proje X (proje adını yazınız)",
+    "objectID": "portfolyo/calisma1.html#a-sağlanan-kaynaklar-videolardan-özet-sağlamak",
+    "href": "portfolyo/calisma1.html#a-sağlanan-kaynaklar-videolardan-özet-sağlamak",
+    "title": "Çalışma 1",
+    "section": "(a) Sağlanan kaynaklar videolardan özet sağlamak",
+    "text": "(a) Sağlanan kaynaklar videolardan özet sağlamak",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#b-özel-fonksiyonlar-ve-döngüler-ile-istatistiksel-özetleri-keşfetmek",
+    "href": "portfolyo/calisma1.html#b-özel-fonksiyonlar-ve-döngüler-ile-istatistiksel-özetleri-keşfetmek",
+    "title": "Çalışma 1",
+    "section": "(b) Özel fonksiyonlar ve döngüler ile istatistiksel özetleri keşfetmek",
+    "text": "(b) Özel fonksiyonlar ve döngüler ile istatistiksel özetleri keşfetmek\n\ncustom_summary &lt;- function(vector){\n    mean &lt;- mean(vector)\n    median &lt;- median(vector)\n    min &lt;- min(vector)\n    max &lt;- max(vector)\n    sd &lt;- sd(vector)\n    return(c(mean, median, min, max, sd))\n}\n\n\n{\n  print(\"Mean, Median, Min, Max, SD\")\n  for (param in 1:length(mtcars)) {\n      print(custom_summary(mtcars[,param]))\n  }\n}\n\n[1] \"Mean, Median, Min, Max, SD\"\n[1] 20.090625 19.200000 10.400000 33.900000  6.026948\n[1] 6.187500 6.000000 4.000000 8.000000 1.785922\n[1] 230.7219 196.3000  71.1000 472.0000 123.9387\n[1] 146.68750 123.00000  52.00000 335.00000  68.56287\n[1] 3.5965625 3.6950000 2.7600000 4.9300000 0.5346787\n[1] 3.2172500 3.3250000 1.5130000 5.4240000 0.9784574\n[1] 17.848750 17.710000 14.500000 22.900000  1.786943\n[1] 0.4375000 0.0000000 0.0000000 1.0000000 0.5040161\n[1] 0.4062500 0.0000000 0.0000000 1.0000000 0.4989909\n[1] 3.6875000 4.0000000 3.0000000 5.0000000 0.7378041\n[1] 2.8125 2.0000 1.0000 8.0000 1.6152\n\napply(mtcars, 2, custom_summary)\n\n           mpg      cyl     disp        hp      drat        wt      qsec\n[1,] 20.090625 6.187500 230.7219 146.68750 3.5965625 3.2172500 17.848750\n[2,] 19.200000 6.000000 196.3000 123.00000 3.6950000 3.3250000 17.710000\n[3,] 10.400000 4.000000  71.1000  52.00000 2.7600000 1.5130000 14.500000\n[4,] 33.900000 8.000000 472.0000 335.00000 4.9300000 5.4240000 22.900000\n[5,]  6.026948 1.785922 123.9387  68.56287 0.5346787 0.9784574  1.786943\n            vs        am      gear   carb\n[1,] 0.4375000 0.4062500 3.6875000 2.8125\n[2,] 0.0000000 0.0000000 4.0000000 2.0000\n[3,] 0.0000000 0.0000000 3.0000000 1.0000\n[4,] 1.0000000 1.0000000 5.0000000 8.0000\n[5,] 0.5040161 0.4989909 0.7378041 1.6152",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#c",
+    "href": "portfolyo/calisma1.html#c",
+    "title": "Çalışma 1",
+    "section": "(c)",
+    "text": "(c)",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Takım: Ançüez",
     "section": "",
-    "text": "Proje sayfamıza hoş geldiniz.\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.\n(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)"
+    "text": "MUY660-İş Analitiği dersi takım sayfamıza hoş geldiniz.\nBu analitik çalışmalarımızı paylaşıyoruz.\nLütfen faaliyetlerimizi görmek için için bizi takipte kalın."
   },
   {
-    "objectID": "proje.html#data-source",
-    "href": "proje.html#data-source",
-    "title": "Proje X",
-    "section": "2.1 Data Source",
-    "text": "2.1 Data Source\nxxxxxx"
+    "objectID": "index.html#takım-üyeleri",
+    "href": "index.html#takım-üyeleri",
+    "title": "Takım: Ançüez",
+    "section": "Takım Üyeleri",
+    "text": "Takım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA"
   },
   {
-    "objectID": "proje.html#general-information-about-data",
-    "href": "proje.html#general-information-about-data",
-    "title": "Proje X",
-    "section": "2.2 General Information About Data",
-    "text": "2.2 General Information About Data\nxxxxxx"
+    "objectID": "index.html#proje-adı",
+    "href": "index.html#proje-adı",
+    "title": "Takım: Ançüez",
+    "section": "Proje Adı",
+    "text": "Proje Adı\nMUY660-İş Analitiği iyileştirme çalışmaları (örnek)"
   },
   {
-    "objectID": "proje.html#reason-of-choice",
-    "href": "proje.html#reason-of-choice",
-    "title": "Proje X",
-    "section": "2.3 Reason of Choice",
-    "text": "2.3 Reason of Choice\nxxxxxx"
+    "objectID": "index.html#proje-konusu",
+    "href": "index.html#proje-konusu",
+    "title": "Takım: Ançüez",
+    "section": "Proje Konusu",
+    "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
   },
   {
-    "objectID": "proje.html#preprocessing",
-    "href": "proje.html#preprocessing",
-    "title": "Proje X",
-    "section": "2.4 Preprocessing",
-    "text": "2.4 Preprocessing\nxxxxxx"
+    "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
+    "href": "index.html#veri-seti-hakkında-özet-bilgi",
+    "title": "Takım: Ançüez",
+    "section": "Veri Seti Hakkında Özet Bilgi",
+    "text": "Veri Seti Hakkında Özet Bilgi"
   },
   {
-    "objectID": "proje.html#exploratory-data-analysis",
-    "href": "proje.html#exploratory-data-analysis",
-    "title": "Proje X",
-    "section": "3.1 Exploratory Data Analysis",
-    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#trend-analysis",
-    "href": "proje.html#trend-analysis",
-    "title": "Proje X",
-    "section": "3.2 Trend Analysis",
-    "text": "3.2 Trend Analysis\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#model-fitting",
-    "href": "proje.html#model-fitting",
-    "title": "Proje X",
-    "section": "3.3 Model Fitting",
-    "text": "3.3 Model Fitting\nxxxxxx"
-  },
-  {
-    "objectID": "proje.html#results",
-    "href": "proje.html#results",
-    "title": "Proje X",
-    "section": "3.4 Results",
-    "text": "3.4 Results\nxxxxxx"
+    "objectID": "index.html#sonuçlar",
+    "href": "index.html#sonuçlar",
+    "title": "Takım: Ançüez",
+    "section": "Sonuçlar",
+    "text": "Sonuçlar\nBurada key takeways verilmelidir. En az 3 en fazla 5 madde ile çarpıcı sonuçlar sunulmalıdır."
   },
   {
     "objectID": "portfolyo/calisma2.html",
@@ -317,15 +161,33 @@
     ]
   },
   {
-    "objectID": "portfolyo/calisma1.html",
-    "href": "portfolyo/calisma1.html",
-    "title": "Çalışma 1",
-    "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
+    "objectID": "portfolyo/calisma2.html#a",
+    "href": "portfolyo/calisma2.html#a",
+    "title": "Çalışma 2",
+    "section": "(a)",
+    "text": "(a)\n\n1 + 1\n\n[1] 2",
     "crumbs": [
       "Porfolyo",
-      "Çalışma 1"
+      "Çalışma 2"
     ]
+  },
+  {
+    "objectID": "portfolyo/calisma2.html#b",
+    "href": "portfolyo/calisma2.html#b",
+    "title": "Çalışma 2",
+    "section": "(b)",
+    "text": "(b)",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 2"
+    ]
+  },
+  {
+    "objectID": "proje.html",
+    "href": "proje.html",
+    "title": "Proje X (proje adını yazınız)",
+    "section": "",
+    "text": "Proje sayfamıza hoş geldiniz.\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.\n(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)"
   },
   {
     "objectID": "proje.html#veri-kaynağı",
@@ -384,81 +246,18 @@
     "text": "3.4 Sonuçlar\nxxxxxx"
   },
   {
-    "objectID": "portfolyo/calisma1.html#a",
-    "href": "portfolyo/calisma1.html#a",
-    "title": "Çalışma 1",
-    "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 1"
-    ]
+    "objectID": "takim/kerem.html#işler",
+    "href": "takim/kerem.html#işler",
+    "title": "Kerem Asaf Tecirlioğlu",
+    "section": "İşler",
+    "text": "İşler\n\nAIS Field, Yazılım Mühendisi, 2023-2024\nSerbest Meslek, 2022-2023\nGeodo Technology, Co-Founder, 2017-2022\nAraştırmacı Çocuk Merkezi, Eğitmen, 2016-2018"
   },
   {
-    "objectID": "portfolyo/calisma2.html#a",
-    "href": "portfolyo/calisma2.html#a",
-    "title": "Çalışma 2",
-    "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 2"
-    ]
-  },
-  {
-    "objectID": "portfolyo/calisma2.html#b",
-    "href": "portfolyo/calisma2.html#b",
-    "title": "Çalışma 2",
-    "section": "(b)",
-    "text": "(b)",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 2"
-    ]
-  },
-  {
-    "objectID": "portfolyo/calisma1.html#b",
-    "href": "portfolyo/calisma1.html#b",
-    "title": "Çalışma 1",
-    "section": "(b)",
-    "text": "(b)",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 1"
-    ]
-  },
-  {
-    "objectID": "takim/dusantadic.html",
-    "href": "takim/dusantadic.html",
-    "title": "Dusan Tadic",
-    "section": "",
-    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Dusan Tadic"
-    ]
-  },
-  {
-    "objectID": "takim/szymanski.html#employements",
-    "href": "takim/szymanski.html#employements",
-    "title": "Sebastian Szymański",
-    "section": "Employements",
-    "text": "Employements\n\nFirm xxx, position xx, year xxx\nFirm yyy, position yyy, year yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Sebastian Szymański"
-    ]
-  },
-  {
-    "objectID": "takim/szymanski.html#internships",
-    "href": "takim/szymanski.html#internships",
-    "title": "Sebastian Szymański",
-    "section": "Internships",
-    "text": "Internships\n\nFirm aaa, position xx, year xxx\nFirm bbb, position yyy, year yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Sebastian Szymański"
-    ]
+    "objectID": "takim/kerem.html#stajlar",
+    "href": "takim/kerem.html#stajlar",
+    "title": "Kerem Asaf Tecirlioğlu",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nSilverline, Otomasyon ve Üretim Mühendisi , 2018\nODTÜ Robot Topluluğu, Yönetim Kurulu Üyesi , 2015-2017"
   },
   {
     "objectID": "takim/szymanski.html#işler",
@@ -481,106 +280,5 @@
       "Takım Üyeleri",
       "Sebastian Szymański"
     ]
-  },
-  {
-    "objectID": "takim/edindzeko.html#işler",
-    "href": "takim/edindzeko.html#işler",
-    "title": "Edin_Džeko",
-    "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Edin_Džeko"
-    ]
-  },
-  {
-    "objectID": "takim/edindzeko.html#stajlar",
-    "href": "takim/edindzeko.html#stajlar",
-    "title": "Edin_Džeko",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Edin_Džeko"
-    ]
-  },
-  {
-    "objectID": "takim/fred.html#işler",
-    "href": "takim/fred.html#işler",
-    "title": "Frederico Rodrigues",
-    "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Frederico Rodrigues"
-    ]
-  },
-  {
-    "objectID": "takim/fred.html#stajlar",
-    "href": "takim/fred.html#stajlar",
-    "title": "Frederico Rodrigues",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Frederico Rodrigues"
-    ]
-  },
-  {
-    "objectID": "takim/dusantadic.html#işler",
-    "href": "takim/dusantadic.html#işler",
-    "title": "Dusan Tadic",
-    "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Dusan Tadic"
-    ]
-  },
-  {
-    "objectID": "takim/dusantadic.html#stajlar",
-    "href": "takim/dusantadic.html#stajlar",
-    "title": "Dusan Tadic",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
-    "crumbs": [
-      "Takım Üyeleri",
-      "Dusan Tadic"
-    ]
-  },
-  {
-    "objectID": "takim/kerem.html#işler",
-    "href": "takim/kerem.html#işler",
-    "title": "Kerem Asaf Tecirlioğlu",
-    "section": "İşler",
-    "text": "İşler\n\nAIS Field, Yazılım Mühendisi, 2023-2024\nSerbest Meslek, 2022-2023\nGeodo Technology, Co-Founder, 2017-2022\nAraştırmacı Çocuk Merkezi, Eğitmen, 2016-2018"
-  },
-  {
-    "objectID": "takim/kerem.html#stajlar",
-    "href": "takim/kerem.html#stajlar",
-    "title": "Kerem Asaf Tecirlioğlu",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nSilverline, Otomasyon ve Üretim Mühendisi , 2018\nODTÜ Robot Topluluğu, Yönetim Kurulu Üyesi , 2015-2017"
-  },
-  {
-    "objectID": "takim/ozgur.html#işler",
-    "href": "takim/ozgur.html#işler",
-    "title": "Özgür Adıgüzel KAYA",
-    "section": "İşler",
-    "text": "İşler\n\nKazan Soda Elektrik, Proses Mühendisi , 2022-devam ediyor"
-  },
-  {
-    "objectID": "takim/ozgur.html#stajlar",
-    "href": "takim/ozgur.html#stajlar",
-    "title": "Özgür Adıgüzel KAYA",
-    "section": "Stajlar",
-    "text": "Stajlar\n\nTüpraş, Üretim Stajyeri, 08.21-09.21\nKazan Soda Elektrik, Üretim Stajyeri, 02.22-03.22"
-  },
-  {
-    "objectID": "takim/ozgur.html",
-    "href": "takim/ozgur.html",
-    "title": "Özgür Adıgüzel KAYA",
-    "section": "",
-    "text": "install.packages(“rmarkdown”)"
   }
 ]

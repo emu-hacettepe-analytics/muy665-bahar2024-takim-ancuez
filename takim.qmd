@@ -10,5 +10,4 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 2.  [Özgür Adıgüzel KAYA](/takim/ozgur.qmd)
 
-3.
-
+3.  
