@@ -5,9 +5,13 @@ number-sections: true
 
 **Proje sayfamıza hoş geldiniz.**
 
-<iframe src="https://giphy.com/embed/B1CrvUCoMxhy8" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/B1CrvUCoMxhy8" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen>
 
-`<p><a href="https://giphy.com/gifs/disneypixar-disney-pixar-B1CrvUCoMxhy8"`{=html}via GIPHY</a></p>
+</iframe>
+
+`<p><a href="https://giphy.com/gifs/disneypixar-disney-pixar-B1CrvUCoMxhy8"`{=html}via GIPHY</a>
+
+</p>
 
 # Proje Genel Bakış ve Kapsamı
 
@@ -35,7 +39,64 @@ xxxxxx
 
 # Analiz
 
-xxxxxx
+1.  **Türkiye'de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı**
+
+    Türkiye'deki taşıt sahipliği ve kullanımı, ülkenin ekonomik ve sosyal dinamiklerini gösteren önemli bir gösterge olarak öne çıkıyor. Bu alandaki analizler, taşıtların farklı yakıt türlerine göre dağılımını ve taşıt tercihlerinin nasıl değiştiğini anlamamıza yardımcı oluyor. Bu çalışmanın amacı, Türkiye'deki benzin, dizel, LPG ve diğer yakıt türlerini kullanan araç sayılarını incelemek ve ülkenin taşıt portföyündeki eğilimleri ve değişiklikleri belirlemektir. Bu analiz, taşıt endüstrisindeki değişiklikleri anlamak ve gelecekteki taşıt tercihlerini tahmin etmek için önemli bir bakış sunuyor.
+
+``` R
+# Gerekli kütüphaneyi yükle
+library(readxl)
+
+# Excel dosyasını oku
+data <- read_excel("https://docs.google.com/spreadsheets/d/1rTfo0CYV7RjoHHi54EXQpMBwlvrXIOth/edit?usp=drive_link&ouid=103767244989106768954&rtpof=true&sd=true")
+
+# Sütunlardaki verileri temizle ve nümerik hale getir
+clean_numeric <- function(column) {
+  column <- gsub(" ", "", column)  # Boşlukları kaldır
+  column <- gsub(",", "", column)  # Virgülleri kaldır
+  as.numeric(column)  # Nümerik hale getir
+}
+
+# Sütunları temizleyip nümerik hale getirme
+data$Benzin <- clean_numeric(data$Benzin)
+data$Dizel <- clean_numeric(data$Dizel)
+data$LPG <- clean_numeric(data$LPG)
+data$Hibrit <- clean_numeric(data$Hibrit)
+data$Elektrik <- clean_numeric(data$Elektrik)
+data$Bilinmeyen <- clean_numeric(data$Bilinmeyen)
+
+# Grafik için verileri hazırla
+x <- data$Yil
+y1 <- data$Benzin
+y2 <- data$Dizel
+y3 <- data$LPG
+y4 <- data$Hibrit
+y5 <- data$Elektrik
+y6 <- data$Bilinmeyen
+
+# En yüksek değeri hesapla
+max_y <- max(c(y1, y2, y3, y4, y5, y6), na.rm = TRUE) * 1.1
+
+# Y ekseni aralıklarını hesapla
+y_ticks <- pretty(c(0, max_y))
+
+# Bilimsel gösterim yerine normal sayılar kullanmak için formatlama
+y_labels <- format(y_ticks, scientific = FALSE)
+
+# Grafiği çiz
+plot(x, y1, type = "l", col = "blue", lwd = 3, ylim = c(0, max_y), xlab = "Yıl", ylab = "Araç Sayısı", main = "Trafige Kayıtlı Otomobillerin Yakıt Cinsine Göre Dağılımı", yaxt = "n")
+lines(x, y2, col = "red", lwd = 3)
+lines(x, y3, col = "green", lwd = 3)
+lines(x, y4, col = "purple", lwd = 3)
+lines(x, y5, col = "orange", lwd = 3)
+lines(x, y6, col = "black", lwd = 3)
+
+# Y ekseni aralıklarını ekle
+axis(2, at = y_ticks, labels = y_labels)
+
+# Legend ekle
+legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "Bilinmeyen"), col = c("blue", "red", "green", "purple", "orange", "black"), lty = 1, lwd = 2, cex = 0.8)
+```
 
 ## Keşifsel Veri Analizi
 
