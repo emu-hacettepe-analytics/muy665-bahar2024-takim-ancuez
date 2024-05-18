@@ -5,13 +5,7 @@ number-sections: true
 
 **Proje sayfamıza hoş geldiniz.**
 
-<iframe src="https://giphy.com/embed/B1CrvUCoMxhy8" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen>
-
-</iframe>
-
-`<p><a href="https://giphy.com/gifs/disneypixar-disney-pixar-B1CrvUCoMxhy8"`{=html}via GIPHY</a>
-
-</p>
+<iframe src="https://giphy.com/embed/B1CrvUCoMxhy8" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 # Proje Genel Bakış ve Kapsamı
 
