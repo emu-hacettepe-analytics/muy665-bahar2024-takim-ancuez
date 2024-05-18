@@ -39,22 +39,21 @@ xxxxxx
 
 # Analiz
 
-1.  **Türkiye'de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı**
+#### **1-Türkiye'de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı**
 
-    Türkiye'deki taşıt sahipliği ve kullanımı, ülkenin ekonomik ve sosyal dinamiklerini gösteren önemli bir gösterge olarak öne çıkıyor. Bu alandaki analizler, taşıtların farklı yakıt türlerine göre dağılımını ve taşıt tercihlerinin nasıl değiştiğini anlamamıza yardımcı oluyor. Bu çalışmanın amacı, Türkiye'deki benzin, dizel, LPG ve diğer yakıt türlerini kullanan araç sayılarını incelemek ve ülkenin taşıt portföyündeki eğilimleri ve değişiklikleri belirlemektir. Bu analiz, taşıt endüstrisindeki değişiklikleri anlamak ve gelecekteki taşıt tercihlerini tahmin etmek için önemli bir bakış sunuyor.
+Türkiye'deki taşıt sahipliği ve kullanımı, ülkenin ekonomik ve sosyal dinamiklerini gösteren önemli bir gösterge olarak öne çıkıyor. Bu alandaki analizler, taşıtların farklı yakıt türlerine göre dağılımını ve taşıt tercihlerinin nasıl değiştiğini anlamamıza yardımcı oluyor. Bu çalışmanın amacı, Türkiye'deki benzin, dizel, LPG ve diğer yakıt türlerini kullanan araç sayılarını incelemek ve ülkenin taşıt portföyündeki eğilimleri ve değişiklikleri belirlemektir. Bu analiz, taşıt endüstrisindeki değişiklikleri anlamak ve gelecekteki taşıt tercihlerini tahmin etmek için önemli bir bakış sunuyor.
 
-``` R
-# Gerekli kütüphaneyi yükle
+``` r
 library(readxl)
 
 # Excel dosyasını oku
-data <- read_excel("https://docs.google.com/spreadsheets/d/1rTfo0CYV7RjoHHi54EXQpMBwlvrXIOth/edit?usp=drive_link&ouid=103767244989106768954&rtpof=true&sd=true")
+data <- read_excel("../muy665-bahar2024-takim-ancuez/dataset/yakit.xlsx")
 
 # Sütunlardaki verileri temizle ve nümerik hale getir
 clean_numeric <- function(column) {
-  column <- gsub(" ", "", column)  # Boşlukları kaldır
-  column <- gsub(",", "", column)  # Virgülleri kaldır
-  as.numeric(column)  # Nümerik hale getir
+    column <- gsub(" ", "", column)  # Boşlukları kaldır
+    column <- gsub(",", "", column)  # Virgülleri kaldır
+    as.numeric(column)  # Nümerik hale getir
 }
 
 # Sütunları temizleyip nümerik hale getirme
@@ -84,19 +83,21 @@ y_ticks <- pretty(c(0, max_y))
 y_labels <- format(y_ticks, scientific = FALSE)
 
 # Grafiği çiz
-plot(x, y1, type = "l", col = "blue", lwd = 3, ylim = c(0, max_y), xlab = "Yıl", ylab = "Araç Sayısı", main = "Trafige Kayıtlı Otomobillerin Yakıt Cinsine Göre Dağılımı", yaxt = "n")
+plot(x, y1, type = "l", col = "blue", lwd = 3, ylim = c(0, max_y), xlab = "Yıl", ylab = "Araç   Sayısı", main = "Trafige Kayıtlı Otomobillerin Yakıt Cinsi Tabanlı Dağılımı", yaxt = "n")
 lines(x, y2, col = "red", lwd = 3)
 lines(x, y3, col = "green", lwd = 3)
 lines(x, y4, col = "purple", lwd = 3)
 lines(x, y5, col = "orange", lwd = 3)
-lines(x, y6, col = "black", lwd = 3)
+lines(x, y6, col = "gray", lwd = 3)
 
 # Y ekseni aralıklarını ekle
 axis(2, at = y_ticks, labels = y_labels)
 
 # Legend ekle
-legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "Bilinmeyen"), col = c("blue", "red", "green", "purple", "orange", "black"), lty = 1, lwd = 2, cex = 0.8)
+legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "Bilinmeyen"), col = c("blue", "red", "green", "purple", "orange", "gray"), lty = 1, lwd = 2, cex = 0.8)
 ```
+
+![](images/yakit_cinsi_grafik_1.PNG){fig-align="center"}
 
 ## Keşifsel Veri Analizi
 
