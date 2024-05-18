@@ -39,7 +39,7 @@ xxxxxx
 
 # Analiz
 
-#### **1-Türkiye'de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı**
+## **Türkiye'de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı**
 
 Türkiye'deki taşıt sahipliği ve kullanımı, ülkenin ekonomik ve sosyal dinamiklerini gösteren önemli bir gösterge olarak öne çıkıyor. Bu alandaki analizler, taşıtların farklı yakıt türlerine göre dağılımını ve taşıt tercihlerinin nasıl değiştiğini anlamamıza yardımcı oluyor. Bu çalışmanın amacı, Türkiye'deki benzin, dizel, LPG ve diğer yakıt türlerini kullanan araç sayılarını incelemek ve ülkenin taşıt portföyündeki eğilimleri ve değişiklikleri belirlemektir. Bu analiz, taşıt endüstrisindeki değişiklikleri anlamak ve gelecekteki taşıt tercihlerini tahmin etmek için önemli bir bakış sunuyor.
 
@@ -98,6 +98,72 @@ legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "B
 ```
 
 ![](images/yakit_cinsi_grafik_1.PNG){fig-align="center"}
+
+## Elektrikli Taşıtlar: Türkiye'de 2034'e Kadar Beklenen Dönüşüm
+
+Türkiye'de elektrikli taşıtların 2034'e kadar beklenen dönüşümü, önemli bir değişimin habercisi olmuştur. Bu süreçte, çevresel endişelerin artması ve teknolojik gelişmelerin ivme kazanmasıyla elektrikli araçlar ön plana çıkabilir. Bu grafik, Türkiye'deki elektrikli araç endüstrisi için geleceğe yönelik önemli bir bakış sunabilir.
+
+``` {.R .R}
+library(readxl)
+library(forecast)
+library(tseries)
+
+# Excel dosyasını oku
+data <- read_excel("../muy665-bahar2024-takim-ancuez/dataset/yakit.xlsx")
+
+# Sütunlardaki verileri temizle ve nümerik hale getir
+clean_numeric <- function(column) {
+  column <- gsub(" ", "", column)  # Boşlukları kaldır
+  column <- gsub(",", "", column)  # Virgülleri kaldır
+  as.numeric(column)  # Nümerik hale getir
+}
+
+# Sütunları temizleyip nümerik hale getirme
+data$Benzin <- clean_numeric(data$Benzin)
+data$Dizel <- clean_numeric(data$Dizel)
+data$LPG <- clean_numeric(data$LPG)
+data$Hibrit <- clean_numeric(data$Hibrit)
+data$Elektrik <- clean_numeric(data$Elektrik)
+data$Bilinmeyen <- clean_numeric(data$Bilinmeyen)
+
+# Elektrikli araçlar verisini al
+elektrik <- data$Elektrik
+
+# NA değerlerini kontrol et ve eksik değerleri doldur
+if (anyNA(elektrik)) {
+  mean_val <- mean(elektrik, na.rm = TRUE)
+  elektrik[is.na(elektrik)] <- mean_val
+  cat("Eksik değerler ortalama ile dolduruldu. Ortalama değer:", mean_val, "\n")
+}
+
+# Zaman serisi verisi oluştur
+elektrik_ts <- ts(elektrik, start = min(data$Yil), end = max(data$Yil), frequency = 1)
+
+# ARIMA modeli oluştur
+fit <- arima(elektrik_ts, order = c(2,1,1))
+
+# Gelecek 10 yıl için tahmin yap
+forecasts <- forecast(fit, h = 10)
+
+# Tahmin sonuçlarını tablo halinde göster
+prediction_results <- data.frame(Yil = seq(max(data$Yil) + 1, max(data$Yil) + 10), Tahmini_Elektrik_Arac_Sayisi = as.numeric(forecasts$mean))
+print(prediction_results)
+
+# Mevcut ve tahmini değerleri birlikte çiz
+plot(forecasts, xlim = c(min(data$Yil), max(data$Yil) + 10), xlab = "Yıl", ylab = "Elektrikli Araç   Sayısı", main = "Elektrikli Araç   Sayısı Tahmini (ARIMA)", col = "blue")
+lines(elektrik_ts, col = "red", lwd = 2)
+
+# Y ekseninin bilimsel gösterimini devre dışı bırak
+options(scipen = 10)
+
+# Y eksenini ekle
+axis(2, ylim = c(0, max(max(elektrik_ts), max(forecasts$mean)) * 1.1))
+
+# Legend ekle
+legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "blue"), lty = 1, lwd = 2, cex = 0.8)
+```
+
+![](images/elektrikli_arac_tahmin.PNG){fig-align="center"}
 
 ## Keşifsel Veri Analizi
 

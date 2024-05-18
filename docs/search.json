@@ -202,29 +202,29 @@
     "objectID": "proje.html#keşifsel-veri-analizi",
     "href": "proje.html#keşifsel-veri-analizi",
     "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
-    "section": "3.1 Keşifsel Veri Analizi",
-    "text": "3.1 Keşifsel Veri Analizi\nxxxxxx"
+    "section": "3.3 Keşifsel Veri Analizi",
+    "text": "3.3 Keşifsel Veri Analizi\nxxxxxx"
   },
   {
     "objectID": "proje.html#trend-analizi",
     "href": "proje.html#trend-analizi",
     "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
-    "section": "3.2 Trend Analizi",
-    "text": "3.2 Trend Analizi\nxxxxxx"
+    "section": "3.4 Trend Analizi",
+    "text": "3.4 Trend Analizi\nxxxxxx"
   },
   {
     "objectID": "proje.html#model-uydurma",
     "href": "proje.html#model-uydurma",
     "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
-    "section": "3.3 Model Uydurma",
-    "text": "3.3 Model Uydurma\nxxxxxx"
+    "section": "3.5 Model Uydurma",
+    "text": "3.5 Model Uydurma\nxxxxxx"
   },
   {
     "objectID": "proje.html#sonuçlar",
     "href": "proje.html#sonuçlar",
     "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
-    "section": "3.4 Sonuçlar",
-    "text": "3.4 Sonuçlar\nxxxxxx"
+    "section": "3.6 Sonuçlar",
+    "text": "3.6 Sonuçlar\nxxxxxx"
   },
   {
     "objectID": "takim/kerem.html#işler",
@@ -308,5 +308,19 @@
       "Porfolyo",
       "Çalışma 1"
     ]
+  },
+  {
+    "objectID": "proje.html#türkiyede-benzin-dizel-lpg-ve-diğer-yakıt-türlerine-göre-taşıt-dağılımı",
+    "href": "proje.html#türkiyede-benzin-dizel-lpg-ve-diğer-yakıt-türlerine-göre-taşıt-dağılımı",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
+    "section": "3.1 Türkiye’de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı",
+    "text": "3.1 Türkiye’de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı\nTürkiye’deki taşıt sahipliği ve kullanımı, ülkenin ekonomik ve sosyal dinamiklerini gösteren önemli bir gösterge olarak öne çıkıyor. Bu alandaki analizler, taşıtların farklı yakıt türlerine göre dağılımını ve taşıt tercihlerinin nasıl değiştiğini anlamamıza yardımcı oluyor. Bu çalışmanın amacı, Türkiye’deki benzin, dizel, LPG ve diğer yakıt türlerini kullanan araç sayılarını incelemek ve ülkenin taşıt portföyündeki eğilimleri ve değişiklikleri belirlemektir. Bu analiz, taşıt endüstrisindeki değişiklikleri anlamak ve gelecekteki taşıt tercihlerini tahmin etmek için önemli bir bakış sunuyor.\nlibrary(readxl)\n\n# Excel dosyasını oku\ndata &lt;- read_excel(\"../muy665-bahar2024-takim-ancuez/dataset/yakit.xlsx\")\n\n# Sütunlardaki verileri temizle ve nümerik hale getir\nclean_numeric &lt;- function(column) {\n    column &lt;- gsub(\" \", \"\", column)  # Boşlukları kaldır\n    column &lt;- gsub(\",\", \"\", column)  # Virgülleri kaldır\n    as.numeric(column)  # Nümerik hale getir\n}\n\n# Sütunları temizleyip nümerik hale getirme\ndata$Benzin &lt;- clean_numeric(data$Benzin)\ndata$Dizel &lt;- clean_numeric(data$Dizel)\ndata$LPG &lt;- clean_numeric(data$LPG)\ndata$Hibrit &lt;- clean_numeric(data$Hibrit)\ndata$Elektrik &lt;- clean_numeric(data$Elektrik)\ndata$Bilinmeyen &lt;- clean_numeric(data$Bilinmeyen)\n\n# Grafik için verileri hazırla\nx &lt;- data$Yil\ny1 &lt;- data$Benzin\ny2 &lt;- data$Dizel\ny3 &lt;- data$LPG\ny4 &lt;- data$Hibrit\ny5 &lt;- data$Elektrik\ny6 &lt;- data$Bilinmeyen\n\n# En yüksek değeri hesapla\nmax_y &lt;- max(c(y1, y2, y3, y4, y5, y6), na.rm = TRUE) * 1.1\n\n# Y ekseni aralıklarını hesapla\ny_ticks &lt;- pretty(c(0, max_y))\n\n# Bilimsel gösterim yerine normal sayılar kullanmak için formatlama\ny_labels &lt;- format(y_ticks, scientific = FALSE)\n\n# Grafiği çiz\nplot(x, y1, type = \"l\", col = \"blue\", lwd = 3, ylim = c(0, max_y), xlab = \"Yıl\", ylab = \"Araç   Sayısı\", main = \"Trafige Kayıtlı Otomobillerin Yakıt Cinsi Tabanlı Dağılımı\", yaxt = \"n\")\nlines(x, y2, col = \"red\", lwd = 3)\nlines(x, y3, col = \"green\", lwd = 3)\nlines(x, y4, col = \"purple\", lwd = 3)\nlines(x, y5, col = \"orange\", lwd = 3)\nlines(x, y6, col = \"gray\", lwd = 3)\n\n# Y ekseni aralıklarını ekle\naxis(2, at = y_ticks, labels = y_labels)\n\n# Legend ekle\nlegend(\"topright\", legend = c(\"Benzin\", \"Dizel\", \"LPG\", \"Hibrit\", \"Elektrik\", \"Bilinmeyen\"), col = c(\"blue\", \"red\", \"green\", \"purple\", \"orange\", \"gray\"), lty = 1, lwd = 2, cex = 0.8)"
+  },
+  {
+    "objectID": "proje.html#elektrikli-taşıtlar-türkiyede-2034e-kadar-beklenen-dönüşüm",
+    "href": "proje.html#elektrikli-taşıtlar-türkiyede-2034e-kadar-beklenen-dönüşüm",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
+    "section": "3.2 Elektrikli Taşıtlar: Türkiye’de 2034’e Kadar Beklenen Dönüşüm",
+    "text": "3.2 Elektrikli Taşıtlar: Türkiye’de 2034’e Kadar Beklenen Dönüşüm\nTürkiye’de elektrikli taşıtların 2034’e kadar beklenen dönüşümü, önemli bir değişimin habercisi olmuştur. Bu süreçte, çevresel endişelerin artması ve teknolojik gelişmelerin ivme kazanmasıyla elektrikli araçlar ön plana çıkabilir. Bu grafik, Türkiye’deki elektrikli araç endüstrisi için geleceğe yönelik önemli bir bakış sunabilir.\nlibrary(readxl)\nlibrary(forecast)\nlibrary(tseries)\n\n# Excel dosyasını oku\ndata &lt;- read_excel(\"../muy665-bahar2024-takim-ancuez/dataset/yakit.xlsx\")\n\n# Sütunlardaki verileri temizle ve nümerik hale getir\nclean_numeric &lt;- function(column) {\n  column &lt;- gsub(\" \", \"\", column)  # Boşlukları kaldır\n  column &lt;- gsub(\",\", \"\", column)  # Virgülleri kaldır\n  as.numeric(column)  # Nümerik hale getir\n}\n\n# Sütunları temizleyip nümerik hale getirme\ndata$Benzin &lt;- clean_numeric(data$Benzin)\ndata$Dizel &lt;- clean_numeric(data$Dizel)\ndata$LPG &lt;- clean_numeric(data$LPG)\ndata$Hibrit &lt;- clean_numeric(data$Hibrit)\ndata$Elektrik &lt;- clean_numeric(data$Elektrik)\ndata$Bilinmeyen &lt;- clean_numeric(data$Bilinmeyen)\n\n# Elektrikli araçlar verisini al\nelektrik &lt;- data$Elektrik\n\n# NA değerlerini kontrol et ve eksik değerleri doldur\nif (anyNA(elektrik)) {\n  mean_val &lt;- mean(elektrik, na.rm = TRUE)\n  elektrik[is.na(elektrik)] &lt;- mean_val\n  cat(\"Eksik değerler ortalama ile dolduruldu. Ortalama değer:\", mean_val, \"\\n\")\n}\n\n# Zaman serisi verisi oluştur\nelektrik_ts &lt;- ts(elektrik, start = min(data$Yil), end = max(data$Yil), frequency = 1)\n\n# ARIMA modeli oluştur\nfit &lt;- arima(elektrik_ts, order = c(2,1,1))\n\n# Gelecek 10 yıl için tahmin yap\nforecasts &lt;- forecast(fit, h = 10)\n\n# Tahmin sonuçlarını tablo halinde göster\nprediction_results &lt;- data.frame(Yil = seq(max(data$Yil) + 1, max(data$Yil) + 10), Tahmini_Elektrik_Arac_Sayisi = as.numeric(forecasts$mean))\nprint(prediction_results)\n\n# Mevcut ve tahmini değerleri birlikte çiz\nplot(forecasts, xlim = c(min(data$Yil), max(data$Yil) + 10), xlab = \"Yıl\", ylab = \"Elektrikli Araç   Sayısı\", main = \"Elektrikli Araç   Sayısı Tahmini (ARIMA)\", col = \"blue\")\nlines(elektrik_ts, col = \"red\", lwd = 2)\n\n# Y ekseninin bilimsel gösterimini devre dışı bırak\noptions(scipen = 10)\n\n# Y eksenini ekle\naxis(2, ylim = c(0, max(max(elektrik_ts), max(forecasts$mean)) * 1.1))\n\n# Legend ekle\nlegend(\"topleft\", legend = c(\"Gerçek Degerler\", \"Tahminler\"), col = c(\"red\", \"blue\"), lty = 1, lwd = 2, cex = 0.8)"
   }
 ]
