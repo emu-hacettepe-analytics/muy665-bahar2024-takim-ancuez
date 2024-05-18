@@ -1,14 +1,13 @@
 ---
-title: "Proje X (proje adını yazınız)"
+title: "Türkiye'de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler"
 number-sections: true
 ---
 
 **Proje sayfamıza hoş geldiniz.**
 
-_Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin._
+<iframe src="https://giphy.com/embed/B1CrvUCoMxhy8" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
-
+`<p><a href="https://giphy.com/gifs/disneypixar-disney-pixar-B1CrvUCoMxhy8"`{=html}via GIPHY</a></p>
 
 # Proje Genel Bakış ve Kapsamı
 

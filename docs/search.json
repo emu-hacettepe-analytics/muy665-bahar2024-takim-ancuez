@@ -46,11 +46,7 @@
     "href": "portfolyo.html",
     "title": "Portfolyo",
     "section": "",
-    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top",
-    "crumbs": [
-      "Porfolyo",
-      "Portfolyo"
-    ]
+    "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top"
   },
   {
     "objectID": "portfolyo/calisma1.html",
@@ -131,94 +127,82 @@
     "href": "portfolyo/calisma2.html",
     "title": "Çalışma 2",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 2"
-    ]
+    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz."
   },
   {
     "objectID": "portfolyo/calisma2.html#a",
     "href": "portfolyo/calisma2.html#a",
     "title": "Çalışma 2",
     "section": "(a)",
-    "text": "(a)\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 2"
-    ]
+    "text": "(a)\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "portfolyo/calisma2.html#b",
     "href": "portfolyo/calisma2.html#b",
     "title": "Çalışma 2",
     "section": "(b)",
-    "text": "(b)",
-    "crumbs": [
-      "Porfolyo",
-      "Çalışma 2"
-    ]
+    "text": "(b)"
   },
   {
     "objectID": "proje.html",
     "href": "proje.html",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "",
-    "text": "Proje sayfamıza hoş geldiniz.\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.\n(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)"
+    "text": "Proje sayfamıza hoş geldiniz."
   },
   {
     "objectID": "proje.html#veri-kaynağı",
     "href": "proje.html#veri-kaynağı",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "2.1 Veri Kaynağı",
     "text": "2.1 Veri Kaynağı\nxxxxxx"
   },
   {
     "objectID": "proje.html#veri-hakkında-genel-bilgiler",
     "href": "proje.html#veri-hakkında-genel-bilgiler",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "2.2 Veri Hakkında Genel Bilgiler",
     "text": "2.2 Veri Hakkında Genel Bilgiler\nxxxxxx"
   },
   {
     "objectID": "proje.html#tercih-sebebi",
     "href": "proje.html#tercih-sebebi",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "2.3 Tercih Sebebi",
     "text": "2.3 Tercih Sebebi\nxxxxxx"
   },
   {
     "objectID": "proje.html#ön-işleme",
     "href": "proje.html#ön-işleme",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "2.4 Ön İşleme",
     "text": "2.4 Ön İşleme\nxxxxxx"
   },
   {
     "objectID": "proje.html#keşifsel-veri-analizi",
     "href": "proje.html#keşifsel-veri-analizi",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "3.1 Keşifsel Veri Analizi",
     "text": "3.1 Keşifsel Veri Analizi\nxxxxxx"
   },
   {
     "objectID": "proje.html#trend-analizi",
     "href": "proje.html#trend-analizi",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "3.2 Trend Analizi",
     "text": "3.2 Trend Analizi\nxxxxxx"
   },
   {
     "objectID": "proje.html#model-uydurma",
     "href": "proje.html#model-uydurma",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "3.3 Model Uydurma",
     "text": "3.3 Model Uydurma\nxxxxxx"
   },
   {
     "objectID": "proje.html#sonuçlar",
     "href": "proje.html#sonuçlar",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "3.4 Sonuçlar",
     "text": "3.4 Sonuçlar\nxxxxxx"
   },
