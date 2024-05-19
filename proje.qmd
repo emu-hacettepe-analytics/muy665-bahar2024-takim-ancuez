@@ -311,8 +311,8 @@ ggplot(en_yuksek_kisi_basi_arac, aes(x = reorder(İl, Kisi_Basina_Arac_Sayisi), 
        x = NULL,
        y = "Kişi Başına Düşen Araç Sayısı") +
   theme_fivethirtyeight() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        plot.title = element_text(hjust = 0.5, vjust = 2))
+  theme(axis.text.x = element_text(angle = 45, hjust = 2),
+        plot.title = element_text(hjust = 0.5, vjust = 3))
 
 
 ```
