@@ -225,6 +225,8 @@ ggplot(bolge_toplamlari, aes(x = "", y = Yuzde, fill = Bolge)) +
 
 ```
 
+![](images/bölgelere göre toplam araç sayısı.PNG){fig-align="center"}
+
 
 ## 2024 Yılında Türkiye'de İllere Göre Kara Taşıtlarının Dağılımları
 
@@ -259,6 +261,8 @@ ggplot(en_yuksek_arac, aes(x = reorder(İl, Toplam), y = Toplam)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
+![](images/illere göre toplam araç sayısı.PNG){fig-align="center"}
 
 
 ## 2024 Yılında Türkiye'de İllere Göre Kişi Başına Düşen Kara Taşıtı Sayısı
@@ -312,6 +316,7 @@ ggplot(en_yuksek_kisi_basi_arac, aes(x = reorder(İl, Kisi_Basina_Arac_Sayisi), 
 
 ```
 
+![](images/Kişi Başına Düşen Araç Sayısı.PNG){fig-align="center"}
 
 
 
