@@ -276,7 +276,7 @@ library(dplyr)
 library(ggthemes)
 
 #Excel dosyasını okuma
-veri <- read_excel("illere göre araç sayısı.xls")
+veri <- read_excel("/Users/ozgurkaya/Documents/GitHub/muy665-bahar2024-takim-ancuez/dataset/illere göre araç sayısı.xls")
 
 veri_filtreli <- veri %>% filter(İl != "Toplam")
 
