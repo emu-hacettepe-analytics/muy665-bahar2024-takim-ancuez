@@ -159,8 +159,10 @@ legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "b
 
 ![](images/elektrikli_arac_tahmin.PNG){fig-align="center"}
 
+
 ## 2024 Yılında Türkiye'de İllere ve Bölgelere Göre Kara Taşıtlarının Dağılımları
 
+```{r}
 library(readr)
 library(readxl)
 library(dslabs)
@@ -219,7 +221,10 @@ ggplot(bolge_toplamlari, aes(x = "", y = Yuzde, fill = Bolge)) +
   theme(axis.text.x = element_blank()) +
   geom_text(aes(label = paste0(round(Yuzde, 1), "%")), position = position_stack(vjust = 0.5))
   
-(images/bölgelere göre toplam araç sayısı.PNG){fig-align="center"}
+
+```
+
+![](images/bölgelere göre toplam araç sayısı.PNG){fig-align="center"}
 
 
 
