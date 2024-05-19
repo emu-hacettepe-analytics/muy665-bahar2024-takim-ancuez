@@ -306,13 +306,13 @@ en_yuksek_kisi_basi_arac <- head(veri_sirali, 10)
 # Kişi başına düşen araç sayısının en yüksek olduğu 10 ilin grafiğini çizdirin
 ggplot(en_yuksek_kisi_basi_arac, aes(x = reorder(İl, Kisi_Basina_Arac_Sayisi), y = Kisi_Basina_Arac_Sayisi)) +
   geom_bar(stat = "identity", fill = "navy") +
-  geom_text(aes(label = round(Kisi_Basina_Arac_Sayisi, 2)), vjust = -0.5, color = "black") +
+  geom_text(aes(label = round(Kisi_Basina_Arac_Sayisi, 2)), vjust = -1, color = "black") +
   labs(title = "Kişi Başına Düşen Araç Sayısının En Yüksek Olduğu 10 İl",
        x = NULL,
        y = "Kişi Başına Düşen Araç Sayısı") +
   theme_fivethirtyeight() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 2),
-        plot.title = element_text(hjust = 0.5, vjust = 3))
+  theme(axis.text.x = element_text(angle = 45, hjust = 3),
+        plot.title = element_text(hjust = 0.5, vjust = 4))
 
 
 ```
