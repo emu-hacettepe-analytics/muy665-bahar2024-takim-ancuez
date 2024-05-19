@@ -160,8 +160,9 @@ legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "b
 ![](images/elektrikli_arac_tahmin.PNG){fig-align="center"}
 
 
-## 2024 Yılında Türkiye'de İllere ve Bölgelere Göre Kara Taşıtlarının Dağılımları
+## 2024 Yılında Türkiye'de Bölgelere Göre Kara Taşıtlarının Sayısının Dağılımları
 
+Türkiye'de kara taşıtı araçlarının sayısının bölgelere göre dağılımını da incelemek istedik. Aslında beklenen sonuçlara proje başında geneel bir bakış sunarak, illere göre dağılım analizlerini yapacağımızda bize bir temel oluşturuyor. Nüfusla bağlantılı olarak Marmara Bölgesi'nde büyük bir pay bekleniyordu. Ancak Türkiye'de yaklaşık her 3 kara taşıtından birinin Marmara Bölgesi'nde olması ilginç bir sonuç olarak karşımıza çıkıyor. Çalışmamızın devamında illerdeki kişi başına düşen araç sayısına bakacağımızda sonucun nasıl olacağını birlikte göreceğiz. 
 ```{r}
 library(readr)
 library(readxl)
@@ -225,6 +226,42 @@ ggplot(bolge_toplamlari, aes(x = "", y = Yuzde, fill = Bolge)) +
 ```
 
 ![](images/bölgelere göre toplam araç sayısı.PNG){fig-align="center"}
+
+## 2024 Yılında Türkiye'de İllere Göre Kara Taşıtlarının Dağılımları
+
+Bu kısımda öncelikle illere göre toplam kara taşıtı sayılarını inceledik. Beklendiği üzere araç sayılarının en fazla olduğu iller büyükşehirler oldu. Bu da aslında gelişmişlikle ve ekonomik durumla tam ilişkilendirilemedi çünkü büyükşehirlerin nüfusu daha fazla. En fazla araç sayısına sahip 10 il grafikte gösterildi. 
+
+```{r}
+library(readxl)
+library(dslabs)
+library(tidyverse)
+library(dplyr)
+library(ggthemes)
+
+#Excel dosyasını oku
+veri <- read_excel("/Users/ozgurkaya/Documents/GitHub/muy665-bahar2024-takim-ancuez/dataset/illere göre araç sayısı.xls")
+
+# "Toplam" verisini çıkarın
+veri_filtreli <- veri %>% filter(İl != "Toplam")
+
+# Toplam araç sayısına göre veriyi azalan sırada sıralayın
+veri_sirali <- veri_filtreli %>% arrange(desc(Toplam))
+# Toplam araç sayısı en yüksek olan 10 ili seçin
+en_yuksek_arac <- veri_sirali %>% top_n(10, Toplam)
+
+# Toplam araç sayısının en yüksek olduğu 10 ilin grafiğini çizdirin
+ggplot(en_yuksek_arac, aes(x = reorder(İl, Toplam), y = Toplam)) +
+  geom_bar(stat = "identity", fill = "navy") +
+  geom_text(aes(label = Toplam), vjust = -0.5, color = "black") +
+  labs(title = "Toplam Araç Sayısının En Yüksek Olduğu 10 İl",
+       x = NULL,
+       y = NULL) +
+  theme_fivethirtyeight() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+![](images/illere göre toplam araç sayısı.PNG){fig-align="center"}
 
 
 
