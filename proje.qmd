@@ -263,6 +263,60 @@ ggplot(en_yuksek_arac, aes(x = reorder(İl, Toplam), y = Toplam)) +
 
 ![](images/illere göre toplam araç sayısı.PNG){fig-align="center"}
 
+## 2024 Yılında Türkiye'de İllere Göre Kişi Başına Düşen Kara Taşıtı Sayısı
+
+Bu bölümde ise kişi başına düşen araç sayısının en yüksek olduğu illeri inceledik. Araç sayısının en yüksek olduğu iller olan İstanbul, Ankara ve İzmir kişi başına düşen araç sayısının en yüksek olduğu iller arasında yer almadı. Muğla, Antalya, Çanakkale, Aydın gibi tatil yöreleri listenin zirvesinde yer aldı. Bu durumu da bu gibi tatil bölgelerinde yaşayan insanların ekonomik durumlarının daha iyi olabiliceğiyle ilişkilendirdik. Maddi durumları iyi, emekli olmuş ve genelde her ailede araç sayısının 1'den fazla olduğu insanların bu bölgede yaşadığının bilinmesi de bu ilişkilendirmenin temelini oluşturdu. 
+
+```{r}
+library(readr)
+library(readxl)
+library(dslabs)
+library(tidyverse)
+library(dplyr)
+library(ggthemes)
+
+#Excel dosyasını okuma
+veri <- read_excel("illere göre araç sayısı.xls")
+
+veri_filtreli <- veri %>% filter(İl != "Toplam")
+
+# Nüfus ve toplam araç sayısı sütunlarını sayısal tipe dönüştürün
+veri_filtreli$Toplam <- as.numeric(gsub("[^0-9]", "", veri_filtreli$Toplam))
+veri_filtreli$Nüfus <- as.numeric(gsub("[^0-9]", "", veri_filtreli$Nüfus))
+
+# Herhangi bir dönüştürme hatasını kontrol edin (örneğin, NA değerler)
+summary(veri_filtreli$Nüfus)
+summary(veri_filtreli$Toplam)
+
+# Kişi başına düşen araç sayısını hesaplayın
+kisi_basina_dusen_arac <- veri_filtreli$Toplam / veri_filtreli$Nüfus
+
+# Veriye kişi başına düşen araç sayısını ekleyin
+veri_filtreli <- veri_filtreli %>%
+  mutate(Kisi_Basina_Arac_Sayisi = kisi_basina_dusen_arac)
+
+# Kişi başına düşen araç sayısına göre veriyi azalan sırada sıralayın
+veri_sirali <- veri_filtreli %>% arrange(desc(Kisi_Basina_Arac_Sayisi))
+
+# Kişi başına düşen araç sayısı en yüksek olan 10 ili seçin
+en_yuksek_kisi_basi_arac <- head(veri_sirali, 10)
+
+# Kişi başına düşen araç sayısının en yüksek olduğu 10 ilin grafiğini çizdirin
+ggplot(en_yuksek_kisi_basi_arac, aes(x = reorder(İl, Kisi_Basina_Arac_Sayisi), y = Kisi_Basina_Arac_Sayisi)) +
+  geom_bar(stat = "identity", fill = "navy") +
+  geom_text(aes(label = round(Kisi_Basina_Arac_Sayisi, 2)), vjust = -0.5, color = "black") +
+  labs(title = "Kişi Başına Düşen Araç Sayısının En Yüksek Olduğu 10 İl",
+       x = NULL,
+       y = "Kişi Başına Düşen Araç Sayısı") +
+  theme_fivethirtyeight() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+![](images/Kişi Başına Düşen Araç Sayısı.PNG){fig-align="center"}
+
+
 
 
 
