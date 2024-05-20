@@ -438,7 +438,7 @@ ggplot(veri_long, aes(x = Yil, y = Deger / 1e6, fill = Degisken)) +  # Y eksenin
 
 ![](images/clipboard-415685437.png)
 
-## Yıllara göre Araç Sayısı – Aralık 2023
+## Yıllara Göre Araç Sayısı – Aralık 2023
 
 ``` R
 library(dslabs)
