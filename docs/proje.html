@@ -165,10 +165,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#yılında-türkiyede-bölgelere-göre-kara-taşıtlarının-sayısının-dağılımları" id="toc-yılında-türkiyede-bölgelere-göre-kara-taşıtlarının-sayısının-dağılımları" class="nav-link" data-scroll-target="#yılında-türkiyede-bölgelere-göre-kara-taşıtlarının-sayısının-dağılımları"><span class="header-section-number">3.3</span> 2024 Yılında Türkiye’de Bölgelere Göre Kara Taşıtlarının Sayısının Dağılımları</a></li>
   <li><a href="#yılında-türkiyede-illere-göre-kara-taşıtlarının-dağılımları" id="toc-yılında-türkiyede-illere-göre-kara-taşıtlarının-dağılımları" class="nav-link" data-scroll-target="#yılında-türkiyede-illere-göre-kara-taşıtlarının-dağılımları"><span class="header-section-number">3.4</span> 2024 Yılında Türkiye’de İllere Göre Kara Taşıtlarının Dağılımları</a></li>
   <li><a href="#yılında-türkiyede-illere-göre-kişi-başına-düşen-kara-taşıtı-sayısı" id="toc-yılında-türkiyede-illere-göre-kişi-başına-düşen-kara-taşıtı-sayısı" class="nav-link" data-scroll-target="#yılında-türkiyede-illere-göre-kişi-başına-düşen-kara-taşıtı-sayısı"><span class="header-section-number">3.5</span> 2024 Yılında Türkiye’de İllere Göre Kişi Başına Düşen Kara Taşıtı Sayısı</a></li>
-  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.6</span> Keşifsel Veri Analizi</a></li>
-  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.7</span> Trend Analizi</a></li>
-  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma"><span class="header-section-number">3.8</span> Model Uydurma</a></li>
-  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.9</span> Sonuçlar</a></li>
+  <li><a href="#mevcut-toplam-araç-sayısı-ve-gelecek-yıllar-için-tahmin" id="toc-mevcut-toplam-araç-sayısı-ve-gelecek-yıllar-için-tahmin" class="nav-link" data-scroll-target="#mevcut-toplam-araç-sayısı-ve-gelecek-yıllar-için-tahmin"><span class="header-section-number">3.6</span> Mevcut Toplam Araç Sayısı ve Gelecek Yıllar için Tahmin</a></li>
+  <li><a href="#değere-karşı-yıl-tahmini" id="toc-değere-karşı-yıl-tahmini" class="nav-link" data-scroll-target="#değere-karşı-yıl-tahmini"><span class="header-section-number">3.7</span> Değere Karşı Yıl Tahmini</a></li>
+  <li><a href="#yıllara-göre-değişken" id="toc-yıllara-göre-değişken" class="nav-link" data-scroll-target="#yıllara-göre-değişken"><span class="header-section-number">3.8</span> Yıllara Göre Değişken</a></li>
+  <li><a href="#yıllara-göre-araç-sayısı-aralık-2023" id="toc-yıllara-göre-araç-sayısı-aralık-2023" class="nav-link" data-scroll-target="#yıllara-göre-araç-sayısı-aralık-2023"><span class="header-section-number">3.9</span> Yıllara Göre Araç Sayısı – Aralık 2023</a></li>
+  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.10</span> Keşifsel Veri Analizi</a></li>
+  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.11</span> Trend Analizi</a></li>
+  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma"><span class="header-section-number">3.12</span> Model Uydurma</a></li>
+  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.13</span> Sonuçlar</a></li>
   </ul></li>
   <li><a href="#sonuçlar-ve-ana-çıkarımlar" id="toc-sonuçlar-ve-ana-çıkarımlar" class="nav-link" data-scroll-target="#sonuçlar-ve-ana-çıkarımlar"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</a></li>
   </ul>
@@ -365,7 +369,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ purrr     1.0.2
 ✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.0     ✔ tibble    3.2.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
 ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
@@ -376,7 +380,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Excel dosyasını oku</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"/Users/ozgurkaya/Documents/GitHub/muy665-bahar2024-takim-ancuez/dataset/illere göre araç sayısı.xls"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"../muy665-bahar2024-takim-ancuez/dataset/illere göre araç sayısı.xls"</span>)</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#İlleri bölgelere göre ayırma</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>bolgeler <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
@@ -446,7 +450,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Excel dosyasını oku</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"/Users/ozgurkaya/Documents/GitHub/muy665-bahar2024-takim-ancuez/dataset/illere göre araç sayısı.xls"</span>)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"../muy665-bahar2024-takim-ancuez/dataset/illere göre araç sayısı.xls"</span>)</span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># "Toplam" verisini çıkarın</span></span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>veri_filtreli <span class="ot">&lt;-</span> veri <span class="sc">%&gt;%</span> <span class="fu">filter</span>(İl <span class="sc">!=</span> <span class="st">"Toplam"</span>)</span>
@@ -487,7 +491,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggthemes)</span>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">#Excel dosyasını okuma</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"/Users/ozgurkaya/Documents/GitHub/muy665-bahar2024-takim-ancuez/dataset/illere göre araç sayısı.xls"</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"../muy665-bahar2024-takim-ancuez/dataset/illere göre araç sayısı.xls"</span>)</span>
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>veri_filtreli <span class="ot">&lt;-</span> veri <span class="sc">%&gt;%</span> <span class="fu">filter</span>(İl <span class="sc">!=</span> <span class="st">"Toplam"</span>)</span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
@@ -538,20 +542,160 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </section>
-<section id="keşifsel-veri-analizi" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.6</span> Keşifsel Veri Analizi</h2>
+<section id="mevcut-toplam-araç-sayısı-ve-gelecek-yıllar-için-tahmin" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="mevcut-toplam-araç-sayısı-ve-gelecek-yıllar-için-tahmin"><span class="header-section-number">3.6</span> Mevcut Toplam Araç Sayısı ve Gelecek Yıllar için Tahmin</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>yillik_arac_sayisi_2023 <span class="ot">&lt;-</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv2</span>(<span class="st">"C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv"</span>,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(yillik_arac_sayisi_2023)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(Toplam <span class="sc">~</span> Yil, <span class="at">data =</span> yillik_arac_sayisi_2023)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>new_years <span class="ot">&lt;-</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">Yil =</span> <span class="fu">seq</span>(<span class="dv">2024</span>, <span class="dv">2030</span>, <span class="at">by =</span> <span class="dv">1</span>))  <span class="co"># 2024'ten 2030'a kadar yıllar</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>predictions <span class="ot">&lt;-</span> <span class="fu">predict</span>(model, new_years)</span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Gelecek yillar icin tahmin edilen toplam arac sayisi:</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(predictions)</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>predicted_data <span class="ot">&lt;-</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">Yil =</span> new_years<span class="sc">$</span>Yil, <span class="at">Toplam =</span> predictions)</span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>yeni_veri <span class="ot">&lt;-</span> yillik_arac_sayisi_2023 <span class="sc">%&gt;%</span> <span class="fu">select</span>(Yil, Toplam)</span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>combined_data <span class="ot">&lt;-</span> <span class="fu">rbind</span>(yeni_veri, predicted_data)</span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(combined_data, <span class="fu">aes</span>(<span class="at">x =</span> Yil, <span class="at">y =</span> Toplam)) <span class="sc">+</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> scales<span class="sc">::</span><span class="fu">number</span>(</span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a>    Toplam,</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="fl">1e-6</span>,</span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">suffix =</span> <span class="st">"M"</span>,</span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">accuracy =</span> <span class="fl">0.1</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>  )),</span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">vjust =</span> <span class="sc">-</span><span class="dv">1</span>,</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="fl">2.25</span>) <span class="sc">+</span></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Mevcut Toplam Arac Sayisi ve Gelecek Yillar Icin Tahmin"</span>,</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Yil"</span>,</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Toplam Arac Sayisi"</span>) <span class="sc">+</span></span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="fu">min</span>(combined_data<span class="sc">$</span>Yil), <span class="fu">max</span>(combined_data<span class="sc">$</span>Yil), <span class="at">by =</span> <span class="dv">3</span>)) <span class="sc">+</span></span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_number</span>(<span class="at">scale =</span> <span class="fl">1e-6</span>, <span class="at">suffix =</span> <span class="st">"M"</span>),</span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fu">max</span>(combined_data<span class="sc">$</span>Toplam), <span class="at">by =</span> <span class="fl">2e6</span>)</span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/clipboard-2929320601.png" class="img-fluid"></p>
+</section>
+<section id="değere-karşı-yıl-tahmini" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="değere-karşı-yıl-tahmini"><span class="header-section-number">3.7</span> Değere Karşı Yıl Tahmini</h2>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>yillik_arac_sayisi_2023 <span class="ot">&lt;-</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv2</span>(<span class="st">"C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv"</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(yillik_arac_sayisi_2023)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>yillik_arac_sayisi_2024_regresyon <span class="ot">&lt;-</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lm</span>(Yil <span class="sc">~</span> Toplam, <span class="at">data =</span> yillik_arac_sayisi_2023)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(yillik_arac_sayisi_2024_regresyon)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>yeni_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Toplam =</span> <span class="dv">40000000</span>)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>prediction <span class="ot">&lt;-</span> <span class="fu">predict</span>(yillik_arac_sayisi_2024_regresyon, yeni_data)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Kayıtlı araç sayısının 40000000' u göreceği tahmini yıl:"</span>,</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    prediction,</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>yeni_veri <span class="ot">&lt;-</span> yillik_arac</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>_sayisi_2023 <span class="sc">%&gt;%</span> <span class="fu">select</span>(Yil, Toplam)</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>tahmin_verisi <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Yil =</span> prediction,</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Toplam =</span> <span class="dv">40000000</span>)</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>tum_veri <span class="ot">&lt;-</span> <span class="fu">rbind</span>(yeni_veri, tahmin_verisi)</span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tum_veri, <span class="fu">aes</span>(<span class="at">x =</span> Yil, <span class="at">y =</span> Toplam)) <span class="sc">+</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> scales<span class="sc">::</span><span class="fu">number</span>(</span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>    Toplam,</span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">scale =</span> <span class="fl">1e-6</span>,</span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">suffix =</span> <span class="st">"M"</span>,</span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">accuracy =</span> <span class="fl">0.1</span></span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a>  )),</span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">2.25</span>,</span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="fl">2.25</span>) <span class="sc">+</span>  <span class="co"># Nokta değerlerini gösterme</span></span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Gercek ve Tahmin Edilen Toplam Arac Sayisi"</span>, <span class="at">x =</span> <span class="st">"Yil"</span>, <span class="at">y =</span> <span class="st">"Toplam Arac Sayisi"</span>) <span class="sc">+</span></span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">2002</span>, <span class="fu">round</span>(prediction), <span class="at">by =</span> <span class="dv">3</span>)) <span class="sc">+</span></span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">label_number</span>(<span class="at">scale =</span> <span class="fl">1e-6</span>, <span class="at">suffix =</span> <span class="st">"M"</span>),</span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fu">max</span>(tum_veri<span class="sc">$</span>Toplam), <span class="at">by =</span> <span class="fl">2e6</span>)</span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/clipboard-2159825865.png" class="img-fluid"></p>
+</section>
+<section id="yıllara-göre-değişken" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="yıllara-göre-değişken"><span class="header-section-number">3.8</span> Yıllara Göre Değişken</h2>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">read.csv2</span>(<span class="st">"C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv"</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> veri[,<span class="sc">!</span>(<span class="fu">names</span>(veri) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Toplam"</span>))]</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(veri)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>veri_long <span class="ot">&lt;-</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(veri,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>               <span class="at">cols =</span> <span class="sc">-</span>Yil,</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>               <span class="at">names_to =</span> <span class="st">"Degisken"</span>,</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>               <span class="at">values_to =</span> <span class="st">"Deger"</span>)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>max_deger <span class="ot">&lt;-</span> <span class="fu">max</span>(veri_long<span class="sc">$</span>Deger) <span class="sc">/</span> <span class="fl">1e6</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(veri_long, <span class="fu">aes</span>(<span class="at">x =</span> Yil, <span class="at">y =</span> Deger <span class="sc">/</span> <span class="fl">1e6</span>, <span class="at">fill =</span> Degisken)) <span class="sc">+</span>  <span class="co"># Y eksenindeki değerler M kısaltması ile</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"stack"</span>) <span class="sc">+</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Yillara Gore Degisken Degerleri"</span>,</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Yil"</span>,</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Deger"</span>) <span class="sc">+</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">scale =</span> <span class="dv">1</span>, <span class="at">suffix =</span> <span class="st">"M"</span>),</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>                     <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fu">ceiling</span>(max_deger) <span class="sc">*</span> <span class="dv">2</span>, <span class="at">by =</span> <span class="dv">2</span>)) <span class="sc">+</span>  <span class="co"># Y ekseninde 2M aralıklı etiketler</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">2002</span>, <span class="dv">2023</span>, <span class="at">by =</span> <span class="dv">3</span>)) <span class="sc">+</span>  <span class="co"># X eksenindeki yıllar 2002'den başlayıp 3 yıl ara ile</span></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set1"</span>) <span class="sc">+</span>  <span class="co"># Renklendirme</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span>  <span class="co"># Tema</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)  <span class="co"># Lejantın konumu</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/clipboard-415685437.png" class="img-fluid"></p>
+</section>
+<section id="yıllara-göre-araç-sayısı-aralık-2023" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="yıllara-göre-araç-sayısı-aralık-2023"><span class="header-section-number">3.9</span> Yıllara Göre Araç Sayısı – Aralık 2023</h2>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>yillik_arac_sayisi_2023 <span class="sc">|&gt;</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> Yil, <span class="at">y =</span> Toplam), <span class="at">col =</span> <span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_label</span>(<span class="fu">aes</span>(</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> Yil,</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> Toplam,</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">comma</span>(Toplam <span class="sc">/</span> <span class="dv">10</span> <span class="sc">^</span> <span class="dv">6</span>, <span class="at">accuracy =</span> <span class="fl">0.1</span>)</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.9</span>,</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">size =</span> <span class="fl">2.25</span>) <span class="sc">+</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">from =</span> <span class="fu">min</span>(yillik_arac_sayisi_2023<span class="sc">$</span>Yil),</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">to =</span> <span class="fu">max</span>(yillik_arac_sayisi_2023<span class="sc">$</span>Yil),</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">by =</span> <span class="dv">3</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">+</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">scale =</span> <span class="fl">1e-6</span>, <span class="at">suffix =</span> <span class="st">"M"</span>),</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>      <span class="at">from =</span> <span class="fu">min</span>(yillik_arac_sayisi_2023<span class="sc">$</span>Toplam),</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>      <span class="at">to =</span> <span class="fu">max</span>(yillik_arac_sayisi_2023<span class="sc">$</span>Toplam),</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>      <span class="at">by =</span> <span class="dv">2</span> <span class="sc">*</span> <span class="dv">10</span> <span class="sc">^</span> <span class="dv">6</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="images/clipboard-306431054.png" class="img-fluid"></p>
+</section>
+<section id="keşifsel-veri-analizi" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.10</span> Keşifsel Veri Analizi</h2>
 <p>xxxxxx</p>
 </section>
-<section id="trend-analizi" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="trend-analizi"><span class="header-section-number">3.7</span> Trend Analizi</h2>
+<section id="trend-analizi" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="trend-analizi"><span class="header-section-number">3.11</span> Trend Analizi</h2>
 <p>xxxxxx</p>
 </section>
-<section id="model-uydurma" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="model-uydurma"><span class="header-section-number">3.8</span> Model Uydurma</h2>
+<section id="model-uydurma" class="level2" data-number="3.12">
+<h2 data-number="3.12" class="anchored" data-anchor-id="model-uydurma"><span class="header-section-number">3.12</span> Model Uydurma</h2>
 <p>xxxxxx</p>
 </section>
-<section id="sonuçlar" class="level2" data-number="3.9">
-<h2 data-number="3.9" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.9</span> Sonuçlar</h2>
+<section id="sonuçlar" class="level2" data-number="3.13">
+<h2 data-number="3.13" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.13</span> Sonuçlar</h2>
 <p>xxxxxx</p>
 </section>
 </section>
