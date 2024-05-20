@@ -5,7 +5,9 @@ number-sections: true
 
 **Proje sayfamıza hoş geldiniz.**
 
-<iframe src="https://giphy.com/embed/B1CrvUCoMxhy8" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/B1CrvUCoMxhy8" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
 
 # Proje Genel Bakış ve Kapsamı
 
@@ -159,10 +161,10 @@ legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "b
 
 ![](images/elektrikli_arac_tahmin.PNG){fig-align="center"}
 
-
 ## 2024 Yılında Türkiye'de Bölgelere Göre Kara Taşıtlarının Sayısının Dağılımları
 
-Türkiye'de kara taşıtı araçlarının sayısının bölgelere göre dağılımını da incelemek istedik. Aslında beklenen sonuçlara proje başında geneel bir bakış sunarak, illere göre dağılım analizlerini yapacağımızda bize bir temel oluşturuyor. Nüfusla bağlantılı olarak Marmara Bölgesi'nde büyük bir pay bekleniyordu. Ancak Türkiye'de yaklaşık her 3 kara taşıtından birinin Marmara Bölgesi'nde olması ilginç bir sonuç olarak karşımıza çıkıyor. Çalışmamızın devamında illerdeki kişi başına düşen araç sayısına bakacağımızda sonucun nasıl olacağını birlikte göreceğiz. 
+Türkiye'de kara taşıtı araçlarının sayısının bölgelere göre dağılımını da incelemek istedik. Aslında beklenen sonuçlara proje başında geneel bir bakış sunarak, illere göre dağılım analizlerini yapacağımızda bize bir temel oluşturuyor. Nüfusla bağlantılı olarak Marmara Bölgesi'nde büyük bir pay bekleniyordu. Ancak Türkiye'de yaklaşık her 3 kara taşıtından birinin Marmara Bölgesi'nde olması ilginç bir sonuç olarak karşımıza çıkıyor. Çalışmamızın devamında illerdeki kişi başına düşen araç sayısına bakacağımızda sonucun nasıl olacağını birlikte göreceğiz.
+
 ```{r}
 library(readr)
 library(readxl)
@@ -225,12 +227,11 @@ ggplot(bolge_toplamlari, aes(x = "", y = Yuzde, fill = Bolge)) +
 
 ```
 
-![](images/bölgelere göre toplam araç sayısı.PNG){fig-align="center"}
-
+![](images/bölgelere%20göre%20toplam%20araç%20sayısı.PNG){fig-align="center"}
 
 ## 2024 Yılında Türkiye'de İllere Göre Kara Taşıtlarının Dağılımları
 
-Bu kısımda öncelikle illere göre toplam kara taşıtı sayılarını inceledik. Beklendiği üzere araç sayılarının en fazla olduğu iller büyükşehirler oldu. Bu da aslında gelişmişlikle ve ekonomik durumla tam ilişkilendirilemedi çünkü büyükşehirlerin nüfusu daha fazla. En fazla araç sayısına sahip 10 il grafikte gösterildi. 
+Bu kısımda öncelikle illere göre toplam kara taşıtı sayılarını inceledik. Beklendiği üzere araç sayılarının en fazla olduğu iller büyükşehirler oldu. Bu da aslında gelişmişlikle ve ekonomik durumla tam ilişkilendirilemedi çünkü büyükşehirlerin nüfusu daha fazla. En fazla araç sayısına sahip 10 il grafikte gösterildi.
 
 ```{r}
 library(readxl)
@@ -262,12 +263,11 @@ ggplot(en_yuksek_arac, aes(x = reorder(İl, Toplam), y = Toplam)) +
 
 ```
 
-![](images/illere göre toplam araç sayısı.PNG){fig-align="center"}
-
+![](images/illere%20göre%20toplam%20araç%20sayısı.PNG){fig-align="center"}
 
 ## 2024 Yılında Türkiye'de İllere Göre Kişi Başına Düşen Kara Taşıtı Sayısı
 
-Bu bölümde ise kişi başına düşen araç sayısının en yüksek olduğu illeri inceledik. Araç sayısının en yüksek olduğu iller olan İstanbul, Ankara ve İzmir kişi başına düşen araç sayısının en yüksek olduğu iller arasında yer almadı. Muğla, Antalya, Çanakkale, Aydın gibi tatil yöreleri listenin zirvesinde yer aldı. Bu durumu da bu gibi tatil bölgelerinde yaşayan insanların ekonomik durumlarının daha iyi olabiliceğiyle ilişkilendirdik. Maddi durumları iyi, emekli olmuş ve genelde her ailede araç sayısının 1'den fazla olduğu insanların bu bölgede yaşadığının bilinmesi de bu ilişkilendirmenin temelini oluşturdu. 
+Bu bölümde ise kişi başına düşen araç sayısının en yüksek olduğu illeri inceledik. Araç sayısının en yüksek olduğu iller olan İstanbul, Ankara ve İzmir kişi başına düşen araç sayısının en yüksek olduğu iller arasında yer almadı. Muğla, Antalya, Çanakkale, Aydın gibi tatil yöreleri listenin zirvesinde yer aldı. Bu durumu da bu gibi tatil bölgelerinde yaşayan insanların ekonomik durumlarının daha iyi olabiliceğiyle ilişkilendirdik. Maddi durumları iyi, emekli olmuş ve genelde her ailede araç sayısının 1'den fazla olduğu insanların bu bölgede yaşadığının bilinmesi de bu ilişkilendirmenin temelini oluşturdu.
 
 ```{r}
 library(readr)
@@ -317,12 +317,160 @@ ggplot(en_yuksek_kisi_basi_arac, aes(x = reorder(İl, Kisi_Basina_Arac_Sayisi), 
 
 ```
 
-![](images/Kişi Başına Düşen Araç Sayısı.PNG){fig-align="center"}
+![](images/Kişi%20Başına%20Düşen%20Araç%20Sayısı.PNG){fig-align="center"}
 
+## Mevcut Toplam Araç Sayısı ve Gelecek Yıllar için Tahmin
 
+``` R
+yillik_arac_sayisi_2023 <-
+  read.csv2("C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv",
+            header = TRUE)
+head(yillik_arac_sayisi_2023)
+model <- lm(Toplam ~ Yil, data = yillik_arac_sayisi_2023)
+summary(model)
+new_years <-
+  data.frame(Yil = seq(2024, 2030, by = 1))  # 2024'ten 2030'a kadar yıllar
+predictions <- predict(model, new_years)
+cat("Gelecek yillar icin tahmin edilen toplam arac sayisi:\n")
+print(predictions)
+predicted_data <-
+  data.frame(Yil = new_years$Yil, Toplam = predictions)
+yeni_veri <- yillik_arac_sayisi_2023 %>% select(Yil, Toplam)
+combined_data <- rbind(yeni_veri, predicted_data)
+ggplot(combined_data, aes(x = Yil, y = Toplam)) +
+  geom_line() +
+  geom_point(color = "red") +
+  geom_text(aes(label = scales::number(
+    Toplam,
+    scale = 1e-6,
+    suffix = "M",
+    accuracy = 0.1
+  )),
+  vjust = -1,
+  size = 2.25) +
+  labs(title = "Mevcut Toplam Arac Sayisi ve Gelecek Yillar Icin Tahmin",
+       x = "Yil",
+       y = "Toplam Arac Sayisi") +
+  scale_x_continuous(breaks = seq(min(combined_data$Yil), max(combined_data$Yil), by = 3)) +
+  scale_y_continuous(
+    labels = scales::label_number(scale = 1e-6, suffix = "M"),
+    breaks = seq(0, max(combined_data$Toplam), by = 2e6)
+  ) +
+  theme_minimal()
 
+```
 
+![](images/clipboard-2929320601.png)
 
+## Değere Karşı Yıl Tahmini
+
+``` R
+install.packages("tidyverse")
+library(tidyverse)
+yillik_arac_sayisi_2023 <-
+  read.csv2("C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv",
+            header = TRUE)
+head(yillik_arac_sayisi_2023)
+yillik_arac_sayisi_2024_regresyon <-
+  lm(Yil ~ Toplam, data = yillik_arac_sayisi_2023)
+summary(yillik_arac_sayisi_2024_regresyon)
+yeni_data <- data.frame(Toplam = 40000000)
+prediction <- predict(yillik_arac_sayisi_2024_regresyon, yeni_data)
+cat("Kayıtlı araç sayısının 40000000' u göreceği tahmini yıl:",
+    prediction,
+    "\n")
+yeni_veri <- yillik_arac
+_sayisi_2023 %>% select(Yil, Toplam)
+tahmin_verisi <- data.frame(Yil = prediction,
+                            Toplam = 40000000)
+tum_veri <- rbind(yeni_veri, tahmin_verisi)
+ggplot(tum_veri, aes(x = Yil, y = Toplam)) +
+  geom_line() +
+  geom_point(color = "red") +
+  geom_text(aes(label = scales::number(
+    Toplam,
+    scale = 1e-6,
+    suffix = "M",
+    accuracy = 0.1
+  )),
+  vjust = -2.25,
+  size = 2.25) +  # Nokta değerlerini gösterme
+  labs(title = "Gercek ve Tahmin Edilen Toplam Arac Sayisi", x = "Yil", y = "Toplam Arac Sayisi") +
+  scale_x_continuous(breaks = seq(2002, round(prediction), by = 3)) +
+  scale_y_continuous(
+    labels = scales::label_number(scale = 1e-6, suffix = "M"),
+    breaks = seq(0, max(tum_veri$Toplam), by = 2e6)
+  ) +
+  theme_minimal()
+```
+
+![](images/clipboard-2159825865.png)
+
+## Yıllara Göre Değişken
+
+``` R
+library(ggplot2)
+library(tidyr)
+library(scales)
+veri <-
+  read.csv2("C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv",
+            header = TRUE)
+veri <- veri[,!(names(veri) %in% c("Toplam"))]
+veri <- na.omit(veri)
+veri_long <-
+  pivot_longer(veri,
+               cols = -Yil,
+               names_to = "Degisken",
+               values_to = "Deger")
+max_deger <- max(veri_long$Deger) / 1e6
+ggplot(veri_long, aes(x = Yil, y = Deger / 1e6, fill = Degisken)) +  # Y eksenindeki değerler M kısaltması ile
+  geom_col(position = "stack") +
+  labs(title = "Yillara Gore Degisken Degerleri",
+       x = "Yil",
+       y = "Deger") +
+  scale_y_continuous(labels = label_number(scale = 1, suffix = "M"),
+                     breaks = seq(0, ceiling(max_deger) * 2, by = 2)) +  # Y ekseninde 2M aralıklı etiketler
+  scale_x_continuous(breaks = seq(2002, 2023, by = 3)) +  # X eksenindeki yıllar 2002'den başlayıp 3 yıl ara ile
+  scale_fill_brewer(palette = "Set1") +  # Renklendirme
+  theme_minimal() +  # Tema
+  theme(legend.position = "bottom")  # Lejantın konumu
+```
+
+![](images/clipboard-415685437.png)
+
+## Yıllara göre Araç Sayısı – Aralık 2023
+
+``` R
+library(dslabs)
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(scales)
+yillik_arac_sayisi_2023 |> ggplot() +
+  geom_point(aes(x = Yil, y = Toplam), col = "blue") +
+  geom_label(aes(
+    x = Yil,
+    y = Toplam,
+    label = comma(Toplam / 10 ^ 6, accuracy = 0.1)
+  ),
+  vjust = -0.9,
+  size = 2.25) +
+  scale_x_continuous(breaks = seq(
+    from = min(yillik_arac_sayisi_2023$Yil),
+    to = max(yillik_arac_sayisi_2023$Yil),
+    by = 3
+  )) +
+  scale_y_continuous(
+    labels = label_number(scale = 1e-6, suffix = "M"),
+    breaks = seq(
+      from = min(yillik_arac_sayisi_2023$Toplam),
+      to = max(yillik_arac_sayisi_2023$Toplam),
+      by = 2 * 10 ^ 6
+    )
+  )
+```
+
+![](images/clipboard-306431054.png)
 
 ## Keşifsel Veri Analizi
 
