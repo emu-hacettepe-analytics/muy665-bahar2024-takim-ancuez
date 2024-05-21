@@ -13,7 +13,7 @@ number-sections: true
 
 [Büşra Bahar KURT](http://localhost:3885/takim/bbaharkurt.html)
 
-[Kerem Asaf T](http://localhost:3885/takim/kerem.html)ECİRLİOĞLU
+[Kerem Asaf TECİRLİOĞLU](http://localhost:3885/takim/kerem.html)
 
 [Özgür Adıgüzel KAYA](http://localhost:3885/takim/ozgur.html)
 
@@ -684,10 +684,6 @@ ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
 
 
 ```
-
-## Trend Analizi
-
-xxxxxx
 
 # Sonuçlar ve Ana Çıkarımlar
 
