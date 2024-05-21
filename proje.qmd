@@ -19,7 +19,7 @@ Türkiye'de türlerine göre (otomobil,kamyon vb.) kara taşıtı sayıları, il
 
 ## Veri Kaynağı
 
-xxxxxx
+TÜİK - https://data.tuik.gov.tr/Bulten/Index?p=Motorlu-Kara-Tasitlari-Ocak-2024-53453
 
 ## Veri Hakkında Genel Bilgiler
 
