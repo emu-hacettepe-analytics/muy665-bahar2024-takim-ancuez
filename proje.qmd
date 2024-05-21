@@ -32,131 +32,71 @@ Veriler genel olarak düzenli ve anlaşılırdı. Eksik veri sayısının çok o
 
 # Analiz
 
-## **Türkiye'de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı**
+## Yıllara Göre Araç Sayısı – Aralık 2023
 
-Türkiye'deki taşıt sahipliği ve kullanımı, ülkenin ekonomik ve sosyal dinamiklerini gösteren önemli bir gösterge olarak öne çıkıyor. Bu alandaki analizler, taşıtların farklı yakıt türlerine göre dağılımını ve taşıt tercihlerinin nasıl değiştiğini anlamamıza yardımcı oluyor. Bu çalışmanın amacı, Türkiye'deki benzin, dizel, LPG ve diğer yakıt türlerini kullanan araç sayılarını incelemek ve ülkenin taşıt portföyündeki eğilimleri ve değişiklikleri belirlemektir. Bu analiz, taşıt endüstrisindeki değişiklikleri anlamak ve gelecekteki taşıt tercihlerini tahmin etmek için önemli bir bakış sunuyor.
-
-``` r
-library(readxl)
-
-# Excel dosyasını oku
-data <- read_excel("../muy665-bahar2024-takim-ancuez/dataset/yakit.xlsx")
-
-# Sütunlardaki verileri temizle ve nümerik hale getir
-clean_numeric <- function(column) {
-    column <- gsub(" ", "", column)  # Boşlukları kaldır
-    column <- gsub(",", "", column)  # Virgülleri kaldır
-    as.numeric(column)  # Nümerik hale getir
-}
-
-# Sütunları temizleyip nümerik hale getirme
-data$Benzin <- clean_numeric(data$Benzin)
-data$Dizel <- clean_numeric(data$Dizel)
-data$LPG <- clean_numeric(data$LPG)
-data$Hibrit <- clean_numeric(data$Hibrit)
-data$Elektrik <- clean_numeric(data$Elektrik)
-data$Bilinmeyen <- clean_numeric(data$Bilinmeyen)
-
-# Grafik için verileri hazırla
-x <- data$Yil
-y1 <- data$Benzin
-y2 <- data$Dizel
-y3 <- data$LPG
-y4 <- data$Hibrit
-y5 <- data$Elektrik
-y6 <- data$Bilinmeyen
-
-# En yüksek değeri hesapla
-max_y <- max(c(y1, y2, y3, y4, y5, y6), na.rm = TRUE) * 1.1
-
-# Y ekseni aralıklarını hesapla
-y_ticks <- pretty(c(0, max_y))
-
-# Bilimsel gösterim yerine normal sayılar kullanmak için formatlama
-y_labels <- format(y_ticks, scientific = FALSE)
-
-# Grafiği çiz
-plot(x, y1, type = "l", col = "blue", lwd = 3, ylim = c(0, max_y), xlab = "Yıl", ylab = "Araç   Sayısı", main = "Trafige Kayıtlı Otomobillerin Yakıt Cinsi Tabanlı Dağılımı", yaxt = "n")
-lines(x, y2, col = "red", lwd = 3)
-lines(x, y3, col = "green", lwd = 3)
-lines(x, y4, col = "purple", lwd = 3)
-lines(x, y5, col = "orange", lwd = 3)
-lines(x, y6, col = "gray", lwd = 3)
-
-# Y ekseni aralıklarını ekle
-axis(2, at = y_ticks, labels = y_labels)
-
-# Legend ekle
-legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "Bilinmeyen"), col = c("blue", "red", "green", "purple", "orange", "gray"), lty = 1, lwd = 2, cex = 0.8)
+``` R
+library(dslabs)
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(scales)
+yillik_arac_sayisi_2023 |> ggplot() +
+  geom_point(aes(x = Yil, y = Toplam), col = "blue") +
+  geom_label(aes(
+    x = Yil,
+    y = Toplam,
+    label = comma(Toplam / 10 ^ 6, accuracy = 0.1)
+  ),
+  vjust = -0.9,
+  size = 2.25) +
+  scale_x_continuous(breaks = seq(
+    from = min(yillik_arac_sayisi_2023$Yil),
+    to = max(yillik_arac_sayisi_2023$Yil),
+    by = 3
+  )) +
+  scale_y_continuous(
+    labels = label_number(scale = 1e-6, suffix = "M"),
+    breaks = seq(
+      from = min(yillik_arac_sayisi_2023$Toplam),
+      to = max(yillik_arac_sayisi_2023$Toplam),
+      by = 2 * 10 ^ 6
+    )
+  )
 ```
 
-![](images/yakit_cinsi_grafik_1.PNG){fig-align="center"}
+![](images/clipboard-306431054.png)
 
-## Elektrikli Taşıtlar: Türkiye'de 2034'e Kadar Beklenen Dönüşüm
+## 2023 Yılına Kadar Araç Türlerinin Dağılımı
 
-Türkiye'de elektrikli taşıtların 2034'e kadar beklenen dönüşümü, önemli bir değişimin habercisi olmuştur. Bu süreçte, çevresel endişelerin artması ve teknolojik gelişmelerin ivme kazanmasıyla elektrikli araçlar ön plana çıkabilir. Bu grafik, Türkiye'deki elektrikli araç endüstrisi için geleceğe yönelik önemli bir bakış sunabilir.
-
-``` {.R .R}
-library(readxl)
-library(forecast)
-library(tseries)
-
-# Excel dosyasını oku
-data <- read_excel("../muy665-bahar2024-takim-ancuez/dataset/yakit.xlsx")
-
-# Sütunlardaki verileri temizle ve nümerik hale getir
-clean_numeric <- function(column) {
-  column <- gsub(" ", "", column)  # Boşlukları kaldır
-  column <- gsub(",", "", column)  # Virgülleri kaldır
-  as.numeric(column)  # Nümerik hale getir
-}
-
-# Sütunları temizleyip nümerik hale getirme
-data$Benzin <- clean_numeric(data$Benzin)
-data$Dizel <- clean_numeric(data$Dizel)
-data$LPG <- clean_numeric(data$LPG)
-data$Hibrit <- clean_numeric(data$Hibrit)
-data$Elektrik <- clean_numeric(data$Elektrik)
-data$Bilinmeyen <- clean_numeric(data$Bilinmeyen)
-
-# Elektrikli araçlar verisini al
-elektrik <- data$Elektrik
-
-# NA değerlerini kontrol et ve eksik değerleri doldur
-if (anyNA(elektrik)) {
-  mean_val <- mean(elektrik, na.rm = TRUE)
-  elektrik[is.na(elektrik)] <- mean_val
-  cat("Eksik değerler ortalama ile dolduruldu. Ortalama değer:", mean_val, "\n")
-}
-
-# Zaman serisi verisi oluştur
-elektrik_ts <- ts(elektrik, start = min(data$Yil), end = max(data$Yil), frequency = 1)
-
-# ARIMA modeli oluştur
-fit <- arima(elektrik_ts, order = c(2,1,1))
-
-# Gelecek 10 yıl için tahmin yap
-forecasts <- forecast(fit, h = 10)
-
-# Tahmin sonuçlarını tablo halinde göster
-prediction_results <- data.frame(Yil = seq(max(data$Yil) + 1, max(data$Yil) + 10), Tahmini_Elektrik_Arac_Sayisi = as.numeric(forecasts$mean))
-print(prediction_results)
-
-# Mevcut ve tahmini değerleri birlikte çiz
-plot(forecasts, xlim = c(min(data$Yil), max(data$Yil) + 10), xlab = "Yıl", ylab = "Elektrikli Araç   Sayısı", main = "Elektrikli Araç   Sayısı Tahmini (ARIMA)", col = "blue")
-lines(elektrik_ts, col = "red", lwd = 2)
-
-# Y ekseninin bilimsel gösterimini devre dışı bırak
-options(scipen = 10)
-
-# Y eksenini ekle
-axis(2, ylim = c(0, max(max(elektrik_ts), max(forecasts$mean)) * 1.1))
-
-# Legend ekle
-legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "blue"), lty = 1, lwd = 2, cex = 0.8)
+``` R
+library(ggplot2)
+library(tidyr)
+library(scales)
+veri <-
+  read.csv2("C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv",
+            header = TRUE)
+veri <- veri[,!(names(veri) %in% c("Toplam"))]
+veri <- na.omit(veri)
+veri_long <-
+  pivot_longer(veri,
+               cols = -Yil,
+               names_to = "Degisken",
+               values_to = "Deger")
+max_deger <- max(veri_long$Deger) / 1e6
+ggplot(veri_long, aes(x = Yil, y = Deger / 1e6, fill = Degisken)) +  # Y eksenindeki değerler M kısaltması ile
+  geom_col(position = "stack") +
+  labs(title = "Yillara Gore Degisken Degerleri",
+       x = "Yil",
+       y = "Deger") +
+  scale_y_continuous(labels = label_number(scale = 1, suffix = "M"),
+                     breaks = seq(0, ceiling(max_deger) * 2, by = 2)) +  # Y ekseninde 2M aralıklı etiketler
+  scale_x_continuous(breaks = seq(2002, 2023, by = 3)) +  # X eksenindeki yıllar 2002'den başlayıp 3 yıl ara ile
+  scale_fill_brewer(palette = "Set1") +  # Renklendirme
+  theme_minimal() +  # Tema
+  theme(legend.position = "bottom")  # Lejantın konumu
 ```
 
-![](images/elektrikli_arac_tahmin.PNG){fig-align="center"}
+![](images/clipboard-415685437.png)
 
 ## 2024 Yılında Türkiye'de Bölgelere Göre Kara Taşıtlarının Sayısının Dağılımları
 
@@ -316,6 +256,69 @@ ggplot(en_yuksek_kisi_basi_arac, aes(x = reorder(İl, Kisi_Basina_Arac_Sayisi), 
 
 ![](images/Kişi%20Başına%20Düşen%20Araç%20Sayısı.PNG){fig-align="center"}
 
+## **Türkiye'de Benzin, Dizel, LPG ve Diğer Yakıt Türlerine Göre Taşıt Dağılımı**
+
+Türkiye'deki taşıt sahipliği ve kullanımı, ülkenin ekonomik ve sosyal dinamiklerini gösteren önemli bir gösterge olarak öne çıkıyor. Bu alandaki analizler, taşıtların farklı yakıt türlerine göre dağılımını ve taşıt tercihlerinin nasıl değiştiğini anlamamıza yardımcı oluyor. Bu çalışmanın amacı, Türkiye'deki benzin, dizel, LPG ve diğer yakıt türlerini kullanan araç sayılarını incelemek ve ülkenin taşıt portföyündeki eğilimleri ve değişiklikleri belirlemektir. Bu analiz, taşıt endüstrisindeki değişiklikleri anlamak ve gelecekteki taşıt tercihlerini tahmin etmek için önemli bir bakış sunuyor.
+
+``` r
+library(readxl)
+
+# Excel dosyasını oku
+data <- read_excel("../muy665-bahar2024-takim-ancuez/dataset/yakit.xlsx")
+
+# Sütunlardaki verileri temizle ve nümerik hale getir
+clean_numeric <- function(column) {
+    column <- gsub(" ", "", column)  # Boşlukları kaldır
+    column <- gsub(",", "", column)  # Virgülleri kaldır
+    as.numeric(column)  # Nümerik hale getir
+}
+
+# Sütunları temizleyip nümerik hale getirme
+data$Benzin <- clean_numeric(data$Benzin)
+data$Dizel <- clean_numeric(data$Dizel)
+data$LPG <- clean_numeric(data$LPG)
+data$Hibrit <- clean_numeric(data$Hibrit)
+data$Elektrik <- clean_numeric(data$Elektrik)
+data$Bilinmeyen <- clean_numeric(data$Bilinmeyen)
+
+# Grafik için verileri hazırla
+x <- data$Yil
+y1 <- data$Benzin
+y2 <- data$Dizel
+y3 <- data$LPG
+y4 <- data$Hibrit
+y5 <- data$Elektrik
+y6 <- data$Bilinmeyen
+
+# En yüksek değeri hesapla
+max_y <- max(c(y1, y2, y3, y4, y5, y6), na.rm = TRUE) * 1.1
+
+# Y ekseni aralıklarını hesapla
+y_ticks <- pretty(c(0, max_y))
+
+# Bilimsel gösterim yerine normal sayılar kullanmak için formatlama
+y_labels <- format(y_ticks, scientific = FALSE)
+
+# Grafiği çiz
+plot(x, y1, type = "l", col = "blue", lwd = 3, ylim = c(0, max_y), xlab = "Yıl", ylab = "Araç   Sayısı", main = "Trafige Kayıtlı Otomobillerin Yakıt Cinsi Tabanlı Dağılımı", yaxt = "n")
+lines(x, y2, col = "red", lwd = 3)
+lines(x, y3, col = "green", lwd = 3)
+lines(x, y4, col = "purple", lwd = 3)
+lines(x, y5, col = "orange", lwd = 3)
+lines(x, y6, col = "gray", lwd = 3)
+
+# Y ekseni aralıklarını ekle
+axis(2, at = y_ticks, labels = y_labels)
+
+# Legend ekle
+legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "Bilinmeyen"), col = c("blue", "red", "green", "purple", "orange", "gray"), lty = 1, lwd = 2, cex = 0.8)
+```
+
+![](images/yakit_cinsi_grafik_1.PNG){fig-align="center"}
+
+
+## Keşifsel Veri Analizi
+
 ## Mevcut Toplam Araç Sayısı ve Gelecek Yıllar için Tahmin
 
 ``` R
@@ -403,75 +406,72 @@ ggplot(tum_veri, aes(x = Yil, y = Toplam)) +
 
 ![](images/clipboard-2159825865.png)
 
-## Yıllara Göre Değişken
+## Elektrikli Taşıtlar: Türkiye'de 2034'e Kadar Beklenen Dönüşüm
 
-``` R
-library(ggplot2)
-library(tidyr)
-library(scales)
-veri <-
-  read.csv2("C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv",
-            header = TRUE)
-veri <- veri[,!(names(veri) %in% c("Toplam"))]
-veri <- na.omit(veri)
-veri_long <-
-  pivot_longer(veri,
-               cols = -Yil,
-               names_to = "Degisken",
-               values_to = "Deger")
-max_deger <- max(veri_long$Deger) / 1e6
-ggplot(veri_long, aes(x = Yil, y = Deger / 1e6, fill = Degisken)) +  # Y eksenindeki değerler M kısaltması ile
-  geom_col(position = "stack") +
-  labs(title = "Yillara Gore Degisken Degerleri",
-       x = "Yil",
-       y = "Deger") +
-  scale_y_continuous(labels = label_number(scale = 1, suffix = "M"),
-                     breaks = seq(0, ceiling(max_deger) * 2, by = 2)) +  # Y ekseninde 2M aralıklı etiketler
-  scale_x_continuous(breaks = seq(2002, 2023, by = 3)) +  # X eksenindeki yıllar 2002'den başlayıp 3 yıl ara ile
-  scale_fill_brewer(palette = "Set1") +  # Renklendirme
-  theme_minimal() +  # Tema
-  theme(legend.position = "bottom")  # Lejantın konumu
+Türkiye'de elektrikli taşıtların 2034'e kadar beklenen dönüşümü, önemli bir değişimin habercisi olmuştur. Bu süreçte, çevresel endişelerin artması ve teknolojik gelişmelerin ivme kazanmasıyla elektrikli araçlar ön plana çıkabilir. Bu grafik, Türkiye'deki elektrikli araç endüstrisi için geleceğe yönelik önemli bir bakış sunabilir.
+
+``` {.R .R}
+library(readxl)
+library(forecast)
+library(tseries)
+
+# Excel dosyasını oku
+data <- read_excel("../muy665-bahar2024-takim-ancuez/dataset/yakit.xlsx")
+
+# Sütunlardaki verileri temizle ve nümerik hale getir
+clean_numeric <- function(column) {
+  column <- gsub(" ", "", column)  # Boşlukları kaldır
+  column <- gsub(",", "", column)  # Virgülleri kaldır
+  as.numeric(column)  # Nümerik hale getir
+}
+
+# Sütunları temizleyip nümerik hale getirme
+data$Benzin <- clean_numeric(data$Benzin)
+data$Dizel <- clean_numeric(data$Dizel)
+data$LPG <- clean_numeric(data$LPG)
+data$Hibrit <- clean_numeric(data$Hibrit)
+data$Elektrik <- clean_numeric(data$Elektrik)
+data$Bilinmeyen <- clean_numeric(data$Bilinmeyen)
+
+# Elektrikli araçlar verisini al
+elektrik <- data$Elektrik
+
+# NA değerlerini kontrol et ve eksik değerleri doldur
+if (anyNA(elektrik)) {
+  mean_val <- mean(elektrik, na.rm = TRUE)
+  elektrik[is.na(elektrik)] <- mean_val
+  cat("Eksik değerler ortalama ile dolduruldu. Ortalama değer:", mean_val, "\n")
+}
+
+# Zaman serisi verisi oluştur
+elektrik_ts <- ts(elektrik, start = min(data$Yil), end = max(data$Yil), frequency = 1)
+
+# ARIMA modeli oluştur
+fit <- arima(elektrik_ts, order = c(2,1,1))
+
+# Gelecek 10 yıl için tahmin yap
+forecasts <- forecast(fit, h = 10)
+
+# Tahmin sonuçlarını tablo halinde göster
+prediction_results <- data.frame(Yil = seq(max(data$Yil) + 1, max(data$Yil) + 10), Tahmini_Elektrik_Arac_Sayisi = as.numeric(forecasts$mean))
+print(prediction_results)
+
+# Mevcut ve tahmini değerleri birlikte çiz
+plot(forecasts, xlim = c(min(data$Yil), max(data$Yil) + 10), xlab = "Yıl", ylab = "Elektrikli Araç   Sayısı", main = "Elektrikli Araç   Sayısı Tahmini (ARIMA)", col = "blue")
+lines(elektrik_ts, col = "red", lwd = 2)
+
+# Y ekseninin bilimsel gösterimini devre dışı bırak
+options(scipen = 10)
+
+# Y eksenini ekle
+axis(2, ylim = c(0, max(max(elektrik_ts), max(forecasts$mean)) * 1.1))
+
+# Legend ekle
+legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "blue"), lty = 1, lwd = 2, cex = 0.8)
 ```
 
-![](images/clipboard-415685437.png)
+![](images/elektrikli_arac_tahmin.PNG){fig-align="center"}
 
-## Yıllara Göre Araç Sayısı – Aralık 2023
-
-``` R
-library(dslabs)
-library(ggplot2)
-library(tidyverse)
-library(dplyr)
-library(scales)
-yillik_arac_sayisi_2023 |> ggplot() +
-  geom_point(aes(x = Yil, y = Toplam), col = "blue") +
-  geom_label(aes(
-    x = Yil,
-    y = Toplam,
-    label = comma(Toplam / 10 ^ 6, accuracy = 0.1)
-  ),
-  vjust = -0.9,
-  size = 2.25) +
-  scale_x_continuous(breaks = seq(
-    from = min(yillik_arac_sayisi_2023$Yil),
-    to = max(yillik_arac_sayisi_2023$Yil),
-    by = 3
-  )) +
-  scale_y_continuous(
-    labels = label_number(scale = 1e-6, suffix = "M"),
-    breaks = seq(
-      from = min(yillik_arac_sayisi_2023$Toplam),
-      to = max(yillik_arac_sayisi_2023$Toplam),
-      by = 2 * 10 ^ 6
-    )
-  )
-```
-
-![](images/clipboard-306431054.png)
-
-## Keşifsel Veri Analizi
-
-xxxxxx
 
 ## Trend Analizi
 
