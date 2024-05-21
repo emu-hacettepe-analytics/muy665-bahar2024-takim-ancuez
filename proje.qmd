@@ -464,7 +464,7 @@ Yukarıdaki grafikte 2002-2023 yılları arasındaki kayıtlı motorlu araç say
 
 Burada tahmin göründüğü üzere modelimize göre 2024 yılında toplam kayıtlı motorlu araç sayısı düşmüş olarak görülmektedir. Bunun da nedeni modelimizde fazla değişken olmamasına istinaden verimli bir tahmin modeli oluşturulamamasındandır.
 
-## Değere Karşı Yıl Tahmini
+## 2037 Yılı İçin Motor Sayısı Tahminleri
 
 ``` r
 install.packages("tidyverse")
