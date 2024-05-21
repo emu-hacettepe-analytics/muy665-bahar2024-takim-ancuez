@@ -21,17 +21,14 @@ Türkiye'de türlerine göre (otomobil,kamyon vb.) kara taşıtı sayıları, il
 
 TÜİK - https://data.tuik.gov.tr/Bulten/Index?p=Motorlu-Kara-Tasitlari-Ocak-2024-53453
 
-## Veri Hakkında Genel Bilgiler
-
-xxxxxx
 
 ## Tercih Sebebi
 
-xxxxxx
+Veriler güvenilir olduğu için çalışmanın daha sağlıklı olacak olmasından dolayı bu veri setleri seçilmiştir. Ayrıca Türkiye'de kara taşıtlarının dağılımlarının nasıl olduğuyla ilgili ortaklaşa bir merak oluştuğu için buradaki veri setleri kullanılmıştır. 
 
 ## Ön İşleme
 
-xxxxxx
+Veriler genel olarak düzenli ve anlaşılırdı. Eksik veri sayısının çok olmaması kolaylık sağladı. Ancak istenen analizlerin yapıalbilmesi için eldeki verilere ek olarak başka veriler bulunarak bu veriler birleştirildi. Düzgün bir Excel formatından R'a aktarılabilmesi için veriler düzenlendi ve uygun formata getirildi. 
 
 # Analiz
 
