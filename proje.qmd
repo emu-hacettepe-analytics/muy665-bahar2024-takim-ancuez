@@ -330,7 +330,7 @@ library(dslabs)
 library(tidyverse)
 library(ggthemes)
 
-veri_2 <- read_excel("/Users/ozgurkaya/Documents/GitHub/muy665-bahar2024-takim-ancuez/dataset/araç satış oranı.xlsx")
+veri_2 <- read_excel("../muy665-bahar2024-takim-ancuez/dataset/araç satış oranı.xlsx")
 
 ggplot(veri_2, aes(x = reorder(Ülke, Oran), y = Oran)) +
   geom_bar(stat = "identity", fill = "blue") +
