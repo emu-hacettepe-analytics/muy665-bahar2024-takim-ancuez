@@ -13,7 +13,7 @@ number-sections: true
 
 [Büşra Bahar KURT](http://localhost:3885/takim/bbaharkurt.html)
 
-[Kerem Asaf T](http://localhost:3885/takim/kerem.html)ECİRLİOĞLU
+[Kerem Asaf TECİRLİOĞLU](http://localhost:3885/takim/kerem.html)
 
 [Özgür Adıgüzel KAYA](http://localhost:3885/takim/ozgur.html)
 
@@ -685,6 +685,7 @@ ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
 
 ```
 
+<<<<<<< HEAD
 ![](images/graph1.png)
 
 ![](images/graph2.png)
@@ -701,6 +702,8 @@ ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
 
 ![](images/graph02.png)
 
+=======
+>>>>>>> 8e0c27d367b37b2e3fd8725279d5b97ff3814fc7
 # Sonuçlar ve Ana Çıkarımlar
 
 -   **Motorlu Kara Taşıtları:** TÜİK'in 2023-2024 verilerine göre, Türkiye'de motorlu kara taşıtlarının toplam sayısında önemli bir artış görülmüştür. Bu anlamda otomobiller, kamyonetler ve motosikletler özellikle dikkat çekmektedir. Ekonomideki iyileştirmeler ve uygun kredi koşulları, otomobil sayısının artmasına neden olabilir. Ticaret ve lojistik sektörlerindeki büyüme, motosiklet ve kamyonet sayısının artmasına neden olabilir. Genel trend, gelecekte motorlu taşıt sayısının artmaya devam edeceğini göstermektedir.
