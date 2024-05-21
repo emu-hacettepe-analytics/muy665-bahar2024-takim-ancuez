@@ -685,9 +685,21 @@ ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
 
 ```
 
-## Trend Analizi
+![](images/graph1.png)
 
-xxxxxx
+![](images/graph2.png)
+
+![](images/graph4.png)
+
+![](images/graph3.png)
+
+![](images/graph5.png)
+
+![](images/graph6.png)
+
+![](images/graph0.png)
+
+![](images/graph02.png)
 
 # Sonuçlar ve Ana Çıkarımlar
 
