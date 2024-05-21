@@ -9,6 +9,16 @@ number-sections: true
 
 </iframe>
 
+***Takım Üyeleri:***
+
+[Büşra Bahar KURT](http://localhost:3885/takim/bbaharkurt.html)
+
+[Kerem Asaf T](http://localhost:3885/takim/kerem.html)ECİRLİOĞLU
+
+[Özgür Adıgüzel KAYA](http://localhost:3885/takim/ozgur.html)
+
+Muhammed Said AKÇAY
+
 # Proje Genel Bakış ve Kapsamı
 
 Projemizde Türkiye'de kara taşıtı ile ilgili bazı verileri inceleyerek araç sayısı, coğrafi bölgelere göre araçların incelenmesi, taşıt türüne göre sayıların incelenmesi gibi bazı genel çıkarımlarda bulunduk. Sonrasında verilerden başka ne gibi analizler yapabiliriz diye düşünerek gelecek yıllar için elektrikli araç sayısı ve toplam araç sayısı gibi tahminlemeler yaptık. Grafiğe döktüğümüz verilerin trendlerinin beklediğimiz gibi çıkıp çıkmadığını da kendi aramızda tartıştık ve en sonunda projede incelediğimiz verilerden çıkardığımız farklı sonuçları listeledik.
@@ -330,7 +340,7 @@ library(dslabs)
 library(tidyverse)
 library(ggthemes)
 
-veri_2 <- read_excel("/Users/ozgurkaya/Documents/GitHub/muy665-bahar2024-takim-ancuez/dataset/araç satış oranı.xlsx")
+veri_2 <- read_excel("../muy665-bahar2024-takim-ancuez/dataset/araç satış oranı.xlsx")
 
 ggplot(veri_2, aes(x = reorder(Ülke, Oran), y = Oran)) +
   geom_bar(stat = "identity", fill = "blue") +
@@ -464,7 +474,7 @@ Yukarıdaki grafikte 2002-2023 yılları arasındaki kayıtlı motorlu araç say
 
 Burada tahmin göründüğü üzere modelimize göre 2024 yılında toplam kayıtlı motorlu araç sayısı düşmüş olarak görülmektedir. Bunun da nedeni modelimizde fazla değişken olmamasına istinaden verimli bir tahmin modeli oluşturulamamasındandır.
 
-## Değere Karşı Yıl Tahmini
+## 2037 Yılı İçin Motor Sayısı Tahmini
 
 ``` r
 install.packages("tidyverse")
@@ -679,10 +689,8 @@ ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
 
 xxxxxx
 
-## Sonuçlar
-
-xxxxxx
-
 # Sonuçlar ve Ana Çıkarımlar
 
-xxxxxx
+-   **Motorlu Kara Taşıtları:** TÜİK'in 2023-2024 verilerine göre, Türkiye'de motorlu kara taşıtlarının toplam sayısında önemli bir artış görülmüştür. Bu anlamda otomobiller, kamyonetler ve motosikletler özellikle dikkat çekmektedir. Ekonomideki iyileştirmeler ve uygun kredi koşulları, otomobil sayısının artmasına neden olabilir. Ticaret ve lojistik sektörlerindeki büyüme, motosiklet ve kamyonet sayısının artmasına neden olabilir. Genel trend, gelecekte motorlu taşıt sayısının artmaya devam edeceğini göstermektedir.
+
+-   **Elektrikli Araçlar:** Türkiye, elektrikli araç kullanımı trendinde diğer Avrupa ülkelerine göre geride kalmıştır. 2022 yılında satılan araçların %90'ının petrol türevli yakıtlı araçlardan oluşması bu durumu açıkça göstermektedir. Ancak, tahmin modelleri, elektrikli araç sayısında önümüzdeki yıllarda önemli bir artış yaşanacağını öngörmektedir. Bu artış, teşvik politikaları, artan çevre bilinci ve teknolojideki gelişmelerin etkisiyle hızlanacaktır. Dolayısıyla, Türkiye'nin elektrikli araç pazarında gelecekteki büyüme potansiyeli oldukça yüksektir.
