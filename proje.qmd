@@ -316,7 +316,7 @@ legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "B
 
 ![](images/yakit_cinsi_grafik_1.PNG){fig-align="center"}
 
-##Yakıt Türlerine Göre Ülkelerin Karşılaştırılması
+## Yakıt Türlerine Göre Ülkelerin Karşılaştırılması
 
 2022 yılındaki farklı ülkelerde gerçekleştirilen kara taşıtlarının satış verileri kullanılmıştır. Bu 10 Avrupa ülkesi arasında petrol ve dizel yakıtlı araçların satış oranının en yüksek olduğu ülkeler Hırvatistan ve Türkiye olmuştur. Türkiye incelendiğinde, diğer Avrupa ülkelerinin elektrikli araçlara geçiş süreçlerine yetişmek için hızlanılması gerektiği görülmektedir. 
 
