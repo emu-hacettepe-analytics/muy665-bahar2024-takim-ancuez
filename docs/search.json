@@ -176,15 +176,15 @@
     "objectID": "proje.html#tercih-sebebi",
     "href": "proje.html#tercih-sebebi",
     "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
-    "section": "2.3 Tercih Sebebi",
-    "text": "2.3 Tercih Sebebi\nxxxxxx"
+    "section": "2.2 Tercih Sebebi",
+    "text": "2.2 Tercih Sebebi\nVeriler güvenilir olduğu için çalışmanın daha sağlıklı olacak olmasından dolayı bu veri setleri seçilmiştir. Ayrıca Türkiye’de kara taşıtlarının dağılımlarının nasıl olduğuyla ilgili ortaklaşa bir merak oluştuğu için buradaki veri setleri kullanılmıştır."
   },
   {
     "objectID": "proje.html#ön-işleme",
     "href": "proje.html#ön-işleme",
     "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
-    "section": "2.4 Ön İşleme",
-    "text": "2.4 Ön İşleme\nxxxxxx"
+    "section": "2.3 Ön İşleme",
+    "text": "2.3 Ön İşleme\nVeriler genel olarak düzenli ve anlaşılırdı. Eksik veri sayısının çok olmaması kolaylık sağladı. Ancak istenen analizlerin yapıalbilmesi için eldeki verilere ek olarak başka veriler bulunarak bu veriler birleştirildi. Düzgün bir Excel formatından R’a aktarılabilmesi için veriler düzenlendi ve uygun formata getirildi."
   },
   {
     "objectID": "proje.html#keşifsel-veri-analizi",
