@@ -345,6 +345,77 @@ ggplot(veri_2, aes(x = reorder(Ülke, Oran), y = Oran)) +
 
 ![](images/ülkeler.PNG){fig-align="center"}
 
+## Renklere Göre Otomobil Sayısı
+
+``` r
+data <- data.frame(
+  Renk = c(
+    "Gri",
+    "Beyaz",
+    "Mavi",
+    "Siyah",
+    "Kırmızı",
+    "Yeşil",
+    "Turuncu",
+    "Sarı",
+    "Kahverengi",
+    "Diğer"
+  ),
+  OtomobilSayisi = c(
+    342175,
+    253851,
+    116412,
+    106873,
+    69766,
+    25279,
+    18828,
+    5245,
+    4660,
+    2679
+  )
+)
+
+data$Dagilim <- data$OtomobilSayisi / sum(data$OtomobilSayisi) * 100
+
+renkler <-
+  c("grey",
+    "white",
+    "blue",
+    "black",
+    "red",
+    "green",
+    "orange",
+    "yellow",
+    "brown",
+    "purple")
+
+par(mar = c(5, 4, 4, 2) + 0.1, cex = 1.0)
+
+barplot_heights <-
+  barplot(
+    height = data$OtomobilSayisi,
+    names.arg = data$Renk,
+    col = renkler,
+    main = "Renk - Otomobil Sayisi Dagilimi",
+    xlab = "Renk",
+    ylab = "Otomobil Sayisi",
+    las = 2,
+    cex.names = 0.8
+  )
+
+text(
+  x = barplot_heights,
+  y = data$OtomobilSayisi,
+  labels = sprintf("%.1f%%\n(%d)", data$Dagilim, data$OtomobilSayisi),
+  pos = 3,
+  cex = 0.8
+)
+```
+
+![](images/clipboard-1636053011.png)
+
+Bu grafikte 2023 yılı istatistiklerine göre Türkiye’ deki kayıtlı otomobillerin renk dağılımı gösterilmektedir: Görüldüğü üzere en fazla 342175 adet ile %36.4’ lük oranla Gri,253851 adet %26.8’ lük oranla Beyaz ve  11612 adet %12.3’ lük oranla mavi gelmektedir.
+
 # Keşifsel Veri Analizi
 
 ## Mevcut Toplam Araç Sayısı ve Gelecek Yıllar için Tahmin
