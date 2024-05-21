@@ -317,7 +317,7 @@ legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "B
 ![](images/yakit_cinsi_grafik_1.PNG){fig-align="center"}
 
 
-## Keşifsel Veri Analizi
+# Keşifsel Veri Analizi
 
 ## Mevcut Toplam Araç Sayısı ve Gelecek Yıllar için Tahmin
 
@@ -477,9 +477,6 @@ legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "b
 
 xxxxxx
 
-## Model Uydurma
-
-xxxxxx
 
 ## Sonuçlar
 
