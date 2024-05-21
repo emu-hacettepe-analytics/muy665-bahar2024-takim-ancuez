@@ -11,30 +11,29 @@ number-sections: true
 
 # Proje Genel Bakış ve Kapsamı
 
-Projemizde Türkiye'de kara taşıtı ile ilgili bazı verileri inceleyerek araç sayısı, coğrafi bölgelere göre araçların incelenmesi, taşıt türüne göre sayıların incelenmesi gibi bazı genel çıkarımlarda bulunduk. Sonrasında verilerden başka ne gibi analizler yapabiliriz diye düşünerek gelecek yıllar için elektrikli araç sayısı ve toplam araç sayısı gibi tahminlemeler yaptık. Grafiğe döktüğümüz verilerin trendlerinin beklediğimiz gibi çıkıp çıkmadığını da kendi aramızda tartıştık ve en sonunda projede incelediğimiz verilerden çıkardığımız farklı sonuçları listeledik. 
+Projemizde Türkiye'de kara taşıtı ile ilgili bazı verileri inceleyerek araç sayısı, coğrafi bölgelere göre araçların incelenmesi, taşıt türüne göre sayıların incelenmesi gibi bazı genel çıkarımlarda bulunduk. Sonrasında verilerden başka ne gibi analizler yapabiliriz diye düşünerek gelecek yıllar için elektrikli araç sayısı ve toplam araç sayısı gibi tahminlemeler yaptık. Grafiğe döktüğümüz verilerin trendlerinin beklediğimiz gibi çıkıp çıkmadığını da kendi aramızda tartıştık ve en sonunda projede incelediğimiz verilerden çıkardığımız farklı sonuçları listeledik.
 
 # Veri
 
-Türkiye'de türlerine göre (otomobil,kamyon vb.) kara taşıtı sayıları, illere göre toplam kara taşıtı sayıları ve yakıt türlerine göre toplam kara taşıtı sayılarının yıllar içindeki değişimini gösteren veri setlerini kullanarak analizlerimizi yaptık. 
+Türkiye'de türlerine göre (otomobil,kamyon vb.) kara taşıtı sayıları, illere göre toplam kara taşıtı sayıları ve yakıt türlerine göre toplam kara taşıtı sayılarının yıllar içindeki değişimini gösteren veri setlerini kullanarak analizlerimizi yaptık.
 
 ## Veri Kaynağı
 
 TÜİK - https://data.tuik.gov.tr/Bulten/Index?p=Motorlu-Kara-Tasitlari-Ocak-2024-53453
 
-
 ## Tercih Sebebi
 
-Veriler güvenilir olduğu için çalışmanın daha sağlıklı olacak olmasından dolayı bu veri setleri seçilmiştir. Ayrıca Türkiye'de kara taşıtlarının dağılımlarının nasıl olduğuyla ilgili ortaklaşa bir merak oluştuğu için buradaki veri setleri kullanılmıştır. 
+Veriler güvenilir olduğu için çalışmanın daha sağlıklı olacak olmasından dolayı bu veri setleri seçilmiştir. Ayrıca Türkiye'de kara taşıtlarının dağılımlarının nasıl olduğuyla ilgili ortaklaşa bir merak oluştuğu için buradaki veri setleri kullanılmıştır.
 
 ## Ön İşleme
 
-Veriler genel olarak düzenli ve anlaşılırdı. Eksik veri sayısının çok olmaması kolaylık sağladı. Ancak istenen analizlerin yapıalbilmesi için eldeki verilere ek olarak başka veriler bulunarak bu veriler birleştirildi. Düzgün bir Excel formatından R'a aktarılabilmesi için veriler düzenlendi ve uygun formata getirildi. 
+Veriler genel olarak düzenli ve anlaşılırdı. Eksik veri sayısının çok olmaması kolaylık sağladı. Ancak istenen analizlerin yapıalbilmesi için eldeki verilere ek olarak başka veriler bulunarak bu veriler birleştirildi. Düzgün bir Excel formatından R'a aktarılabilmesi için veriler düzenlendi ve uygun formata getirildi.
 
 # Analiz
 
 ## Yıllara Göre Araç Sayısı – Aralık 2023
 
-``` R
+``` r
 library(dslabs)
 library(ggplot2)
 library(tidyverse)
@@ -66,9 +65,13 @@ yillik_arac_sayisi_2023 |> ggplot() +
 
 ![](images/clipboard-306431054.png)
 
+Yukarıdaki grafikte 2002-2003 yıl aralığı için Türkiyede’ ki toplam kayıtlı motorlu araç sayıları nokta grafik olarak  sunulmuştur. Grafik incelendiğinde 21 yıl içerisinde ülkemizdeki kayıtlı motorlu araç sayısı 20M artmış. En fazla artış 2.2M ille 2022-2023 yılları arasında olmuştur. Bunun nedeni Korona akabindeki normalleşme ile daha önce karşılanamayan birikmiş araç ihtiyaçların sağlanabilmesi.
+
 ## 2023 Yılına Kadar Araç Türlerinin Dağılımı
 
-``` R
+Aşağıdaki grafik 2002-2023 yılları arasındaki toplam araç sayılarının her bir yıl içerisindeki dağılımlarını göstermektedir. Bu garfikğe dıştan genel bir gözle bakıldığında dahi, toplam araç sayısındaki en etken değişkenin otomobil sayısı olduğu görülmektedir. Daha sonra etkili olan araçlar yıllara göre değişim ivmeleri neredeyse aynı olmakla birlikte motorsiklet ve kamyonettir. Geri kalan kamyon, minibüs, özel amaçlı, otobüs ve traktör her sene neredeyse aynıdır. Bu da değişkenlerdeki artışın ilk bakışta farkedilir derecede az olduğunu göstermektedir.
+
+``` r
 library(ggplot2)
 library(tidyr)
 library(scales)
@@ -318,7 +321,7 @@ legend("topright", legend = c("Benzin", "Dizel", "LPG", "Hibrit", "Elektrik", "B
 
 ## Yakıt Türlerine Göre Ülkelerin Karşılaştırılması
 
-2022 yılındaki farklı ülkelerde gerçekleştirilen kara taşıtlarının satış verileri kullanılmıştır. Bu 10 Avrupa ülkesi arasında petrol ve dizel yakıtlı araçların satış oranının en yüksek olduğu ülkeler Hırvatistan ve Türkiye olmuştur. Türkiye incelendiğinde, diğer Avrupa ülkelerinin elektrikli araçlara geçiş süreçlerine yetişmek için hızlanılması gerektiği görülmektedir. 
+2022 yılındaki farklı ülkelerde gerçekleştirilen kara taşıtlarının satış verileri kullanılmıştır. Bu 10 Avrupa ülkesi arasında petrol ve dizel yakıtlı araçların satış oranının en yüksek olduğu ülkeler Hırvatistan ve Türkiye olmuştur. Türkiye incelendiğinde, diğer Avrupa ülkelerinin elektrikli araçlara geçiş süreçlerine yetişmek için hızlanılması gerektiği görülmektedir.
 
 ```{r}
 library(readr)
@@ -342,12 +345,11 @@ ggplot(veri_2, aes(x = reorder(Ülke, Oran), y = Oran)) +
 
 ![](images/ülkeler.PNG){fig-align="center"}
 
-
 # Keşifsel Veri Analizi
 
 ## Mevcut Toplam Araç Sayısı ve Gelecek Yıllar için Tahmin
 
-``` R
+``` r
 yillik_arac_sayisi_2023 <-
   read.csv2("C:/Users/msaid/Desktop/yillik_arac_sayisi_2023.csv",
             header = TRUE)
@@ -383,14 +385,17 @@ ggplot(combined_data, aes(x = Yil, y = Toplam)) +
     breaks = seq(0, max(combined_data$Toplam), by = 2e6)
   ) +
   theme_minimal()
-
 ```
 
 ![](images/clipboard-2929320601.png)
 
+Yukarıdaki grafikte 2002-2023 yılları arasındaki kayıtlı motorlu araç sayısı veri setinden yola çıkılarak, 2030 yılına kadar olması beklenen (tahmin edilen) toplam kayıtlı motorlu araç sayısı değişimini resmetmektedir.
+
+Burada tahmin göründüğü üzere modelimize göre 2024 yılında toplam kayıtlı motorlu araç sayısı düşmüş olarak görülmektedir. Bunun da nedeni modelimizde fazla değişken olmamasına istinaden verimli bir tahmin modeli oluşturulamamasındandır.
+
 ## Değere Karşı Yıl Tahmini
 
-``` R
+``` r
 install.packages("tidyverse")
 library(tidyverse)
 yillik_arac_sayisi_2023 <-
@@ -431,6 +436,8 @@ ggplot(tum_veri, aes(x = Yil, y = Toplam)) +
 ```
 
 ![](images/clipboard-2159825865.png)
+
+Yukarıda 2002-2023 yılları arasındaki verilerden yola çıkarak, ülkemizde mevcutta 28.7M olan kayıtlı motor sayısının hangi yılda 40000000 değerine ulaşacağı tahmini grafik olarak gösterilmiştir. Tahminimize göre 2037 yılı öngörülmektedir.
 
 ## Elektrikli Taşıtlar: Türkiye'de 2034'e Kadar Beklenen Dönüşüm
 
@@ -498,11 +505,9 @@ legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "b
 
 ![](images/elektrikli_arac_tahmin.PNG){fig-align="center"}
 
-
 ## Trend Analizi
 
 xxxxxx
-
 
 ## Sonuçlar
 
