@@ -347,7 +347,7 @@ ggplot(veri_2, aes(x = reorder(Ülke, Oran), y = Oran)) +
 
 ## Renklere Göre Otomobil Sayısı
 
-``` R
+``` r
 data <- data.frame(
   Renk = c(
     "Gri",
