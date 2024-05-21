@@ -15,7 +15,7 @@ Projemizde Türkiye'de kara taşıtı ile ilgili bazı verileri inceleyerek ara�
 
 # Veri
 
-xxxxxx
+Türkiye'de türlerine göre (otomobil,kamyon vb.) kara taşıtı sayıları, illere göre toplam kara taşıtı sayıları ve yakıt türlerine göre toplam kara taşıtı sayılarının yıllar içindeki değişimini gösteren veri setlerini kullanarak analizlerimizi yaptık. 
 
 ## Veri Kaynağı
 
