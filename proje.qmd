@@ -576,6 +576,105 @@ legend("topleft", legend = c("Gerçek Degerler", "Tahminler"), col = c("red", "b
 
 ![](images/elektrikli_arac_tahmin.PNG){fig-align="center"}
 
+## Türkiyede Kentleşmenin Mobilitiye Etkileri
+
+Bu bölümde şehirlerdeki kentleşmenin mikromobiliteye ve trafikteki mobiliteye etkileri incelenmektedir. Analiz sonucunda vatandaşların kentleşmeyle beraber mobilite alım eğilimlerinde değişiklikler gözlemlenmiştir
+
+```{r}
+load("../muy665-bahar2024-takim-ancuez/dataset/kerem_ws.RData")
+
+library(dslabs)
+library(ggplot2)
+library(tidyverse)
+library(ggthemes)
+library(ggrepel)
+
+nlyfirstup <- function(x) {
+  x = toupper(x)
+  x = tolower(x)
+  substr(x, 1, 1) <- toupper(substr(x, 1, 1))
+  x
+}
+
+
+
+bileske |> ggplot(aes(Motosiklet..2.,m2_basi_bina)) +  
+  geom_point(size = 3) +
+  geom_smooth(se = FALSE, method = "gam")+ 
+  scale_x_log10() + 
+  scale_y_log10() +
+  xlab("Number of motorcycles in traffic (log scale)") + 
+  ylab("Apartmens per km2 in the city (log scale)") 
+
+
+bileske |> ggplot(aes(motorsiklet_orani,m2_basi_bina)) +  
+  geom_point(size = 3) +
+  geom_smooth(se = FALSE, method = "gam")+ 
+  scale_x_log10() + 
+  scale_y_log10() +
+  xlab("Percentige of motorcyles in traffic (log scale)") + 
+  ylab("Aparments per km2 in the city (log scale)") 
+
+
+
+
+
+bileske |> ggplot(aes(Motosiklet..2.,m2_basi_insan)) +  
+  geom_point(size = 3) +
+  geom_smooth(se = FALSE, method = "gam")+ 
+  scale_x_log10() + 
+  scale_y_log10() +
+  xlab("Number of motorcycles in traffic (log scale)") + 
+  ylab("People per km2 in the city (log scale)") 
+
+
+bileske |> ggplot(aes(motorsiklet_orani,m2_basi_insan)) +  
+  geom_point(size = 3) +
+  geom_smooth(se = FALSE, method = "gam")+ 
+  scale_x_log10() + 
+  scale_y_log10() +
+  xlab("Percentige of motorcyles in traffic (log scale)") + 
+  ylab("People per km2 in the city (log scale)") 
+
+
+
+
+
+istanbul_ozel |> ggplot(aes(istasyon_sayisi,m2_basi_bina)) +  
+  geom_point(size = 3) +
+  geom_smooth(se = FALSE, method = "gam")+ 
+  scale_x_log10() + 
+  scale_y_log10() +
+  xlab("Number of bicycle stations (log scale)") + 
+  ylab("Apartments per km2 in the city (log scale)") 
+
+
+
+istanbul_ozel |> ggplot(aes(istasyon_sayisi,m2_basi_insan)) +  
+  geom_point(size = 3) +
+  geom_smooth(se = FALSE, method = "gam")+ 
+  scale_x_log10() + 
+  scale_y_log10() +
+  xlab("Number of bicycle stations (log scale)") + 
+  ylab("People per km2 in the city (log scale)") 
+
+
+ggplot(tasit_oran2, aes(x = "", y = oranlar, fill = tasit_tipi)) +
+  geom_bar(width = 1, stat = "identity") +
+  coord_polar("y") +
+  labs(title = "Türkiye Genelinde Taşıt Yüzdeleri", x=NULL, y=NULL) +
+  theme(axis.text.x = element_blank()) +
+  geom_text(aes(label = paste0(round(oranlar, 1), "%")), position = position_stack(vjust = 0.5))
+
+
+ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
+  geom_bar(width = 1, stat = "identity") +
+  labs(title = "Araç Tipine Kişi Başı Düşen Araç Sayıları", x=NULL, y=NULL) +
+  theme(axis.text.x = element_text(angle = 90, hjust=1)) 
+
+
+```
+
 ## Trend Analizi
 
 xxxxxx
