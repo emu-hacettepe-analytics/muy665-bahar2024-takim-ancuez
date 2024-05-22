@@ -687,22 +687,7 @@ ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
 
 ```
 
-<<<<<<< HEAD
-![](images/graph1.png)
 
-![](images/graph2.png)
-
-![](images/graph4.png)
-
-![](images/graph3.png)
-
-![](images/graph5.png)
-
-![](images/graph6.png)
-
-![](images/graph0.png)
-
-![](images/graph02.png)
 
 =======
 >>>>>>> 8e0c27d367b37b2e3fd8725279d5b97ff3814fc7
