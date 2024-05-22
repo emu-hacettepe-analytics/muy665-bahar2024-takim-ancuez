@@ -689,7 +689,7 @@ ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
 
 
 
-=======
+
 # Sonuçlar ve Ana Çıkarımlar
 
 -   **Motorlu Kara Taşıtları:** TÜİK'in 2023-2024 verilerine göre, Türkiye'de motorlu kara taşıtlarının toplam sayısında önemli bir artış görülmüştür. Bu anlamda otomobiller, kamyonetler ve motosikletler özellikle dikkat çekmektedir. Ekonomideki iyileştirmeler ve uygun kredi koşulları, otomobil sayısının artmasına neden olabilir. Ticaret ve lojistik sektörlerindeki büyüme, motosiklet ve kamyonet sayısının artmasına neden olabilir. Genel trend, gelecekte motorlu taşıt sayısının artmaya devam edeceğini göstermektedir.
