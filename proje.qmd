@@ -17,9 +17,9 @@ number-sections: true
 
 [Özgür Adıgüzel KAYA](http://localhost:3885/takim/ozgur.html)
 
-[Muhammed Said AKÇAY] (http://localhost:3885/takim/muhammed.html)
+[Muhammed Said AKÇAY](http://localhost:3885/takim/muhammed.html)
 
-Abdülhamit Aksakal
+[Abdülhamit Aksakal](http://localhost:3885/takim/hamit.html)
 
 # Proje Genel Bakış ve Kapsamı
 

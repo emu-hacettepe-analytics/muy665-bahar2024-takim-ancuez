@@ -4,7 +4,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\nBüşra Bahar KURT\nMuhammed Said AKÇAY\n\n\n\n\n\n Back to top"
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\nBüşra Bahar KURT\nMuhammed Said AKÇAY\nAbdülhamit AKSAKAL\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "takim/ozgur.html",
@@ -92,7 +92,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Ançüez",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\nBüşra Bahar KURT\nMuhammed Said AKÇAY\nAbdülhamit Aksakal"
+    "text": "Takım Üyeleri\n\nKerem Asaf Tecirlioğlu\nÖzgür Adıgüzel KAYA\nBüşra Bahar KURT\nMuhammed Said AKÇAY\nAbdülhamit AKSAKAL"
   },
   {
     "objectID": "index.html#proje-adı",
@@ -148,7 +148,7 @@
     "href": "proje.html",
     "title": "Türkiye’de Taşıt Sahipliği ve Kullanımı: Veriler ve Eğilimler",
     "section": "",
-    "text": "Proje sayfamıza hoş geldiniz.\nTakım Üyeleri:\nBüşra Bahar KURT\nKerem Asaf TECİRLİOĞLU\nÖzgür Adıgüzel KAYA\n[Muhammed Said AKÇAY] (http://localhost:3885/takim/muhammed.html)\nAbdülhamit Aksakal"
+    "text": "Proje sayfamıza hoş geldiniz.\nTakım Üyeleri:\nBüşra Bahar KURT\nKerem Asaf TECİRLİOĞLU\nÖzgür Adıgüzel KAYA\nMuhammed Said AKÇAY\nAbdülhamit Aksakal"
   },
   {
     "objectID": "proje.html#veri-kaynağı",
@@ -423,5 +423,19 @@
     "title": "Muhammed Said AKÇAY",
     "section": "Stajlar",
     "text": "Stajlar\n• TUSAŞ – Türk Havacılık ve Uzay Sanayii A.Ş., Stajyer Mühendis (Fabrika Tesis ve Organizasyonu) Ağustos 2014 - Eylül 2014\n• Hidromek Makina A.Ş., Stajyer Mühendis (Isı ve Mekanik Sistem Analizi) Temmuz 2011-Ağustos 2011\n• Okursoy A.Ş., Stajyer Mühendis (İmal Usülleri ve İmalat Sistemleri) Ağustos 2010-Eylül 2010"
+  },
+  {
+    "objectID": "docs/takim/hamit.html#işler",
+    "href": "docs/takim/hamit.html#işler",
+    "title": "Abdülhamit AKSAKAL",
+    "section": "İşler",
+    "text": "İşler\n\nAPAK Enerji, Proje Mühendisi , 04.13-02.21\nYILMAZ Elektrik, Üretim ve Lojistik Destek Uzmanı, 06.21-09.22\nPENTAMEK Savunma, Satış Mühendisi, 01.23-halen"
+  },
+  {
+    "objectID": "docs/takim/hamit.html#stajlar",
+    "href": "docs/takim/hamit.html#stajlar",
+    "title": "Abdülhamit AKSAKAL",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nSONATEK SAVUNMA, AR-GE Stajyeri, 08.11-09.11"
   }
 ]
