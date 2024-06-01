@@ -17,7 +17,7 @@ number-sections: true
 
 [Özgür Adıgüzel KAYA](http://localhost:3885/takim/ozgur.html)
 
-Muhammed Said AKÇAY
+[Muhammed Said AKÇAY] (http://localhost:3885/takim/muhammed.html)
 
 Abdülhamit Aksakal
 
@@ -686,9 +686,6 @@ ggplot(tasit_nüfus2, aes(x = tasit_tipi, y = oranlar, fill = tasit_tipi)) +
 
 
 ```
-
-
-
 
 # Sonuçlar ve Ana Çıkarımlar
 
